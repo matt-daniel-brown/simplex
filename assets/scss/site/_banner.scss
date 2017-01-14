@@ -1,0 +1,49 @@
+.row-banner {
+  background: desaturate(lighten($green, 45%), 45%);
+}
+
+.row-banner__container {
+  position: relative;
+  padding: 4em 0;
+}
+
+.row-banner__text {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+
+// sm and up
+
+@media (min-width: $screen-sm-min) {
+  .row-banner__container {
+    position: relative;
+    padding: 6em 0;
+  }
+}
+
+
+// md and up
+
+@media (min-width: $screen-md-min) {
+  .row-banner__container {
+    position: relative;
+    padding: 8em 0;
+  }
+}
+
+
+// lg and up
+
+@media (min-width: $screen-lg-min) {
+  .row-banner__container {
+    position: relative;
+    padding: 10em 0;
+  }
+}

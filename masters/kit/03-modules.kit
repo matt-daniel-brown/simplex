@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>HTML modules - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" lang="en" content="Description">
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="assets/css/prism.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+  <!-- @import "modules/skip-link" -->
+
+  <!-- header row -->
+  <div class="row-header">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><!-- @import "modules/simplex-logo" --><a href="index.html">Simplex</a></li>
+        <li><a href="01-elements.html">Elements</a></li>
+        <li><a href="02-helpers.html">Helpers</a></li>
+        <li><b>Modules</b></li>
+        <li><a href="04-grid.html">Grid</a></li>
+        <li><a href="05-example.html">Example</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="row-general">
+    <div class="container-medium center" id="content">
+      <h1>HTML modules</h1>
+      <ul class="list-inline-pipe">
+        <li><a href="#buttons">button</a></li>
+        <li><a href="#link-buttons">link-button</a></li>
+        <li><a href="#form">form</a></li>
+        <li><a href="#container">container</a></li>
+        <li><a href="#vertical-container">vertical-container</a></li>
+        <li><a href="#lists">list</a></li>
+        <li><a href="#table">table</a></li>
+        <li><a href="#media">media</a></li>
+        <li><a href="#flag">flag</a></li>
+      </ul>
+      <hr>
+
+      <h2 id="buttons">buttons</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <div class="mar-b-1"><!-- @import "modules/button-primary" --></div>
+        <div class="mar-b-1"><!-- @import "modules/button-secondary" --></div>
+        <div class="mar-b-1"><!-- @import "modules/button-success" --></div>
+        <div class="mar-b-1"><!-- @import "modules/button-warning" --></div>
+        <div class="mar-b-1"><!-- @import "modules/button-link" --></div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Varieties --&gt;
+&lt;button type="button" class="button-primary"&gt;primary&lt;/button&gt;
+&lt;button type="button" class="button-secondary"&gt;secondary&lt;/button&gt;
+&lt;button type="button" class="button-success"&gt;success&lt;/button&gt;
+&lt;button type="button" class="button-warning"&gt;warning&lt;/button&gt;
+&lt;button type="button" class="button-link"&gt;link&lt;/button&gt;
+
+&lt;!-- Type --&gt;
+&lt;button type="button" class="button-primary"&gt;button&lt;/button&gt;
+&lt;button type="submit" class="button-primary"&gt;submit&lt;/button&gt;
+&lt;button type="reset" class="button-primary"&gt;reset&lt;/button&gt;
+&lt;button type="menu" class="button-primary"&gt;menu&lt;/button&gt;
+
+&lt;!-- Disabled attribute --&gt;
+&lt;button type="button" class="button-primary" disabled&gt;disabled&lt;/button&gt;
+</code></pre>
+    <hr>
+
+    <h2 id="link-buttons">link-buttons</h2>
+    <h5 class="example-heading">Example</h5>
+    <div class="example">
+      <!-- @import "modules/link-button-primary" -->
+      <!-- @import "modules/link-button-secondary" -->
+    </div>
+    <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;a href="#" class="link-button-primary"&gt;link-button-primary&lt;/a&gt;
+&lt;a href="#" class="link-button-secondary"&gt;link-button-secondary&lt;/a&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="form">form modules</h2>
+      <h3>input</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+  <!-- @import "modules/input" -->
+  <!-- @import "modules/input-placeholder" -->
+  <!-- @import "modules/input-value" -->
+  <!-- @import "modules/input-hidden" -->
+  <!-- @import "modules/input-hint" -->
+  <!-- @import "modules/input-required" -->
+  <!-- @import "modules/input-invalid" -->
+  <!-- @import "modules/input-disabled" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- input --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example1a"&gt;
+    &lt;span class="input__content"&gt;Input&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1a" id="example1a"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input with placeholder --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example1b"&gt;
+    &lt;span class="input__content"&gt;Input with placeholder&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1b" id="example1b" placeholder="Add Your Name"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input with value --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example1g"&gt;
+    &lt;span class="input__content"&gt;Input with value&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1g" id="example1b" value="Add Your Name"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input with hidden label --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example1h"&gt;
+    &lt;span class="input__content hidden"&gt;Hidden input&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1h" id="example1b" value="Add Your Name"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input with hint --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example1f"&gt;
+    &lt;span class="input__content"&gt;Input with hint message&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1f" id="example1f"&gt;
+    &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input required --&gt;
+&lt;div class="input input--required"&gt;
+  &lt;label class="input__label" for="example1e"&gt;
+    &lt;span class="input__content"&gt;Input required&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1e" id="example1e" required&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input invalid --&gt;
+&lt;div class="input isInvalid"&gt;
+  &lt;label class="input__label" for="example1f"&gt;
+    &lt;span class="input__content"&gt;Input invalid&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1f" id="example1f" required&gt;
+    &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input disabled --&gt;
+&lt;div class="input input--disabled"&gt;
+  &lt;label class="input__label" for="example1d"&gt;
+    &lt;span class="input__content"&gt;Input disabled&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1d" id="example1d" disabled&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>checkbox</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/checkbox" -->
+        <!-- @import "modules/checkbox-required" -->
+        <!-- @import "modules/checkbox-invalid" -->
+        <!-- @import "modules/checkbox-disabled" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Checkbox --&gt;
+&lt;div class="input-checkbox"&gt;
+  &lt;label class="input-checkbox__label" for="example3a"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3a"&gt;
+    &lt;span class="input-checkbox__content"&gt;Checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Required checkbox --&gt;
+&lt;div class="input-checkbox input-checkbox--required"&gt;
+  &lt;label class="input-checkbox__label" for="example3b"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3b" required&gt;
+    &lt;span class="input-checkbox__content"&gt;Required checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Invalid checkbox --&gt;
+&lt;div class="input-checkbox isInvalid"&gt;
+  &lt;label class="input-checkbox__label" for="example3c"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3c"&gt;
+    &lt;span class="input-checkbox__content"&gt;Invalid checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled checkbox --&gt;
+&lt;div class="input-checkbox input-checkbox--disabled"&gt;
+  &lt;label class="input-checkbox__label" for="example3b"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3b" disabled&gt;
+    &lt;span class="input-checkbox__content"&gt;Disabled checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>radio</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+  <!-- @import "modules/radio" -->
+  <!-- @import "modules/radio-required" -->
+  <!-- @import "modules/radio-invalid" -->
+  <!-- @import "modules/radio-disabled" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Radio button --&gt;
+&lt;div class="input-radio"&gt;
+  &lt;label class="input-radio__label" for="example2a"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example2a"&gt;
+    &lt;span class="input-radio__content"&gt;Radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Required radio button --&gt;
+&lt;div class="input-radio input-radio--required"&gt;
+  &lt;label class="input-radio__label" for="example2b"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example2b" required&gt;
+    &lt;span class="input-radio__content"&gt;Required radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Invalid radio button --&gt;
+&lt;div class="input-radio isInvalid"&gt;
+  &lt;label class="input-radio__label" for="example2c"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example2c"&gt;
+    &lt;span class="input-radio__content"&gt;Invalid radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled radio button --&gt;
+&lt;div class="input-radio input-radio--disabled"&gt;
+  &lt;label class="input-radio__label" for="example2b"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example2b" disabled&gt;
+    &lt;span class="input-radio__content"&gt;Disabled radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>select</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+  <!-- @import "modules/select" -->
+  <!-- @import "modules/select-hidden" -->
+  <!-- @import "modules/select-hint" -->
+  <!-- @import "modules/select-required" -->
+  <!-- @import "modules/select-invalid" -->
+  <!-- @import "modules/select-disabled" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Select --&gt;
+&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example4a"&gt;
+    &lt;span class="select__content"&gt;Select&lt;/span&gt;
+    &lt;select class="select__control" id="example4a" name="example4a"&gt;
+        &lt;option value=""&gt;Choose an option&lt;/option&gt;
+        &lt;option value="one"&gt;one&lt;/option&gt;
+        &lt;option value="two"&gt;two&lt;/option&gt;
+        &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Hidden select --&gt;
+&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example4b"&gt;
+    &lt;span class="select__content hidden"&gt;Hidden select&lt;/span&gt;
+    &lt;select class="select__control" id="example4b" name="example4b"&gt;
+        &lt;option value=""&gt;Choose an option&lt;/option&gt;
+        &lt;option value="one"&gt;one&lt;/option&gt;
+        &lt;option value="two"&gt;two&lt;/option&gt;
+        &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Select with hint --&gt;
+&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example4b"&gt;
+    &lt;span class="select__content"&gt;Select with hint message&lt;/span&gt;
+    &lt;select class="select__control" id="example4b" name="example4b"&gt;
+        &lt;option value=""&gt;Choose an option&lt;/option&gt;
+        &lt;option value="one"&gt;one&lt;/option&gt;
+        &lt;option value="two"&gt;two&lt;/option&gt;
+        &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Required select --&gt;
+&lt;div class="select select--required"&gt;
+  &lt;label class="select__label" for="example4c"&gt;
+    &lt;span class="select__content"&gt;Required select&lt;/span&gt;
+    &lt;select class="select__control" id="example4c" name="example4c" required&gt;
+        &lt;option value=""&gt;Choose an option&lt;/option&gt;
+        &lt;option value="one"&gt;one&lt;/option&gt;
+        &lt;option value="two"&gt;two&lt;/option&gt;
+        &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Invalid select --&gt;
+&lt;div class="select isInvalid"&gt;
+  &lt;label class="select__label" for="example4d"&gt;
+    &lt;span class="select__content"&gt;Inalid select&lt;/span&gt;
+    &lt;select class="select__control" id="example4d" name="example4d"&gt;
+        &lt;option value=""&gt;Choose an option&lt;/option&gt;
+        &lt;option value="one"&gt;one&lt;/option&gt;
+        &lt;option value="two"&gt;two&lt;/option&gt;
+        &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled select --&gt;
+&lt;div class="select select--disabled"&gt;
+  &lt;label class="select__label" for="example4b"&gt;
+    &lt;span class="select__content"&gt;Disabled select&lt;/span&gt;
+    &lt;select class="select__control" id="example4b" name="example4b" disabled&gt;
+        &lt;option value=""&gt;Choose an option&lt;/option&gt;
+        &lt;option value="one"&gt;one&lt;/option&gt;
+        &lt;option value="two"&gt;two&lt;/option&gt;
+        &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>textarea</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+  <!-- @import "modules/textarea" -->
+  <!-- @import "modules/textarea-hidden" -->
+  <!-- @import "modules/textarea-hint" -->
+  <!-- @import "modules/textarea-required" -->
+  <!-- @import "modules/textarea-invalid" -->
+  <!-- @import "modules/textarea-disabled" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Textarea --&gt;
+&lt;div class="textarea"&gt;
+  &lt;label class="textarea__label" for="example5a"&gt;
+    &lt;span class="textarea__content"&gt;Textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example5a" rows="5"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea with hidden label --&gt;
+&lt;div class="textarea"&gt;
+  &lt;label class="textarea__label" for="example5a"&gt;
+    &lt;span class="textarea__content hidden"&gt;Textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example5a" rows="5"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea with hint --&gt;
+&lt;div class="textarea"&gt;
+  &lt;label class="textarea__label" for="example5a"&gt;
+    &lt;span class="textarea__content"&gt;Textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example5a" rows="5"&gt;&lt;/textarea&gt;
+    &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Required textarea --&gt;
+&lt;div class="textarea textarea--required"&gt;
+  &lt;label class="textarea__label" for="example5a"&gt;
+    &lt;span class="textarea__content"&gt;Required textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example5a" rows="5" required&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Invalid textarea --&gt;
+&lt;div class="textarea isInvalid"&gt;
+  &lt;label class="textarea__label" for="example5a"&gt;
+    &lt;span class="textarea__content"&gt;Invalid textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example5a" rows="5"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+    &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled textarea --&gt;
+&lt;div class="textarea textarea--disabled"&gt;
+  &lt;label class="textarea__label" for="example5a"&gt;
+    &lt;span class="textarea__content"&gt;Disabled textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example5a" rows="5" disabled&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="container">container</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/container" -->
+        <!-- @import "modules/container-medium" -->
+        <!-- @import "modules/container-narrow" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="container"&gt;
+  container
+&lt;/div&gt;
+
+&lt;div class="container-medium"&gt;
+  container-medium
+&lt;/div&gt;
+
+&lt;div class="container-narrow"&gt;
+  container-narrow
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="vertical-container">vertical-container</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+  <!-- @import "modules/vertical-container-lg" -->
+  <!-- @import "modules/vertical-container-md" -->
+  <!-- @import "modules/vertical-container-sm" -->
+  <!-- @import "modules/vertical-container-xs" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="vertical-container-lg"&gt;
+  vertical-container-lg
+&lt;/div&gt;
+
+&lt;div class="vertical-container-md"&gt;
+  vertical-container-md
+&lt;/div&gt;
+
+&lt;div class="vertical-container-sm"&gt;
+  vertical-container-sm
+&lt;/div&gt;
+
+&lt;div class="vertical-container-xs"&gt;
+  vertical-container-xs
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="lists">lists</h2>
+      <h3>list-unstyled</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/list-unstyled" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      <h3>list-inline</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/list-inline" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;ul class="list-inline"&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      <h3>list-inline-greater</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/list-inline-greater" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;ul class="list-inline-greater"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Event 1&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      <h3>list-inline-pipe</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/list-inline-pipe" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;ul class="list-inline-pipe"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Event 1&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      <h3>list-inline-slash</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/list-inline-slash" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;ul class="list-inline-slash"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Event 1&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      <h3>list-pagination</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/list-pagination" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;ul class="list-pagination"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;«&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;»&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="table">tables</h2>
+      <h3>table-striped</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/table-striped" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;table class="table-striped"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+
+      <h3>table-hover</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/table-hover" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;table class="table-hover"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+
+      <h3>table-border</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/table-border" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;table class="table-border"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="media">media modules</h2>
+
+      <h3>media</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/media" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="media"&gt;
+  &lt;a href="#" class="media__feature"&gt;
+    &lt;img src="assets/img/100x100.png" alt=""&gt;
+  &lt;/a&gt;
+  &lt;div class="media__body"&gt;
+    Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>media--rev</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/media-rev" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="media media--rev"&gt;
+  &lt;a href="#" class="media__feature"&gt;
+    &lt;img src="assets/img/100x100.png" alt=""&gt;
+  &lt;/a&gt;
+  &lt;div class="media__body"&gt;
+    Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="flag">flag modules</h2>
+
+      <h3>flag</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/flag" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="flag"&gt;
+  &lt;div class="flag__feature"&gt;
+    &lt;img src="assets/img/100x1000.png" alt=""&gt;
+  &lt;/div&gt;
+  &lt;div class="flag__body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>flag--bottom</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/flag-bottom" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="flag flag--bottom"&gt;
+  &lt;div class="flag__feature"&gt;
+    &lt;img src="assets/img/100x1000.png" alt=""&gt;
+  &lt;/div&gt;
+  &lt;div class="flag__body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h3>flag--rev</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <!-- @import "modules/flag-rev" -->
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="flag flag--rev"&gt;
+  &lt;div class="flag__body"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div class="flag__feature"&gt;
+    &lt;img src="assets/img/100x1000.png" alt=""&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+    </div>
+  </div>
+
+  <script src="assets/js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,1632 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>Helper classes - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" lang="en" content="Description">
+
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="assets/css/prism.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+    <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="row-header">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><svg
+  class="simplex-logo-small"
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 230 230"
+  style="enable-background:new 0 0 230 230;"
+  xml:space="preserve">
+<style type="text/css">
+  .st0{enable-background:new;}
+  .st1{enable-background:new;}
+</style>
+<path class="st0" d="M115,1C52,1,1,52,1,115s51,114,114,114s114-51,114-114S178,1,115,1z"/>
+<path class="st1" d="M118.8,161.6c-0.1,0.2-0.2,0.4-0.3,0.5c-4.9,5-9.8,9.8-14.8,14.8c-0.2,0.1-0.4,0.3-0.6,0.4
+  c-2,1.4-3.9,3.1-6,4.2c-12.7,6.7-25.3,6.1-37.5-1.7c-1.4-0.8-2.5-1.9-3.9-2.9c-0.9-0.9-1.9-1.9-2.8-2.8c-0.1-0.2-0.3-0.5-0.4-0.6
+  c-1.3-2-3.1-3.9-4.2-6c-6.7-12.8-6.1-25.4,1.7-37.6c0.9-1.4,1.9-2.5,2.9-3.9c9.8-9.6,19.3-19.1,28.8-28.7c1.2-0.8,2.4-1.8,3.6-2.6
+  c12.1-7.7,24.8-8.2,37.4-1.6c2.9,1.5,5.5,3.5,7.7,5.8c3.6,3.6,3.9,8.8,0.5,12.6c-3,3.4-8,4.1-11.8,1.4c-1.5-1.1-3-2.5-4.6-3.6
+  c-7-4.3-16.2-3.3-22.1,2.5c-8.5,8.6-17.1,17-25.6,25.6c-6.6,6.7-6.9,17.3-0.9,24.5c6,7,16.6,8.3,24.2,2.8c0.8-0.6,1.6-1.3,2.3-2
+  c4.1-4.1,8.1-8.1,12.2-12.2c3.2-3.2,7.6-4,11.3-1.6C120.7,151.4,122,157.5,118.8,161.6z"/>
+<path class="st1" d="M179.9,100.2c-0.9,1.3-1.9,2.5-2.9,3.9c-9.7,9.6-19.3,19.1-28.7,28.7c-1.2,0.8-2.4,1.8-3.6,2.6
+  c-12.1,7.7-24.8,8.2-37.4,1.6c-2.9-1.5-5.5-3.5-7.7-5.8c-3.6-3.6-3.9-8.8-0.5-12.6c3-3.4,8-4,11.8-1.3c1.5,1.1,3,2.5,4.6,3.6
+  c7,4.3,16.2,3.3,22.1-2.5c8.6-8.5,17.1-17,25.6-25.6c6.6-6.7,6.9-17.3,0.8-24.5c-5.9-7-16.6-8.3-24.2-2.8c-0.8,0.6-1.6,1.3-2.3,2
+  c-4.1,4.1-8.1,8.1-12.2,12.2c-3.2,3.2-7.7,4-11.3,1.6c-4.4-2.6-5.7-8.7-2.5-12.9c0.1-0.2,0.2-0.4,0.3-0.5c4.9-5,9.8-9.8,14.8-14.8
+  c0.2-0.1,0.5-0.3,0.6-0.4c2-1.3,3.9-3.1,5.9-4.2c12.8-6.7,25.4-6.1,37.6,1.7c1.4,0.8,2.6,1.9,3.9,2.9c0.9,0.9,1.9,1.9,2.8,2.8
+  c0.1,0.2,0.3,0.4,0.4,0.6c1.4,2,3.1,3.9,4.2,6C188.3,75.3,187.8,87.9,179.9,100.2z"/>
+</svg>
+<a href="index.html">Simplex</a></li>
+        <li><a href="01-elements.html">Elements</a></li>
+        <li><b>Helpers</b></li>
+        <li><a href="03-modules.html">Modules</a></li>
+        <li><a href="04-grid.html">Grid</a></li>
+        <li><a href="05-example.html">Example</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="row-general">
+    <div class="container-medium center" id="content">
+      <h1>Helper classes</h1>
+      <ul class="list-inline-pipe">
+        <li><a href="#color">Color</a></li>
+        <li><a href="#font">Font</a></li>
+        <li><a href="#hidden">Hidden</a></li>
+        <li><a href="#visible">Visible</a></li>
+        <li><a href="#float">Float</a></li>
+        <li><a href="#center">Center</a></li>
+        <li><a href="#text-align">Text-align</a></li>
+        <li><a href="#margin">Margin</a></li>
+        <li><a href="#padding">Padding</a></li>
+      </ul>
+      <hr>
+
+      <h2 id="color">Color helpers</h2>
+      <h3>Colors</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="row">
+  <div class="col-sm-3">
+    <div class="color-sample c-black">c-black</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-white bg-gray30">c-white</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-red">c-red</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-green">c-green</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-blue">c-blue</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-dark-blue">c-dark-blue</div>
+  </div>
+</div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="c-black"&gt;c-black&lt;/div&gt;
+&lt;div class="c-white"&gt;c-white&lt;/div&gt;
+&lt;div class="c-yellow"&gt;c-yellow&lt;/div&gt;
+&lt;div class="c-red"&gt;c-red&lt;/div&gt;
+&lt;div class="c-blue"&gt;c-blue&lt;/div&gt;
+&lt;div class="c-green"&gt;c-green&lt;/div&gt;
+</code></pre>
+
+      <h3>Background-colors</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="row">
+  <div class="col-sm-3">
+    <div class="color-sample bg-black c-white">bg-black</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-white c-gray30">bg-white</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-red c-white">bg-red</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-green c-white">bg-green</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-blue c-white">bg-blue</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-dark-blue c-white">bg-dark-blue</div>
+  </div>
+</div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="bg-black"&gt;bg-black&lt;/div&gt;
+&lt;div class="bg-white"&gt;bg-white&lt;/div&gt;
+&lt;div class="bg-yellow"&gt;bg-yellow&lt;/div&gt;
+&lt;div class="bg-red"&gt;bg-red&lt;/div&gt;
+&lt;div class="bg-blue"&gt;bg-blue&lt;/div&gt;
+&lt;div class="bg-green"&gt;bg-green&lt;/div&gt;
+</code></pre>
+
+      <h3>Gray colors</h3>
+      <h5 class="example-heading">Example</h5>
+      
+<div class="row">
+  <div class="col-sm-3">
+    <div class="color-sample c-gray5">c-gray5</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray10">c-gray10</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray15">c-gray15</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray20">c-gray20</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray25">c-gray25</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray30">c-gray30</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray35">c-gray35</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray40">c-gray40</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray45">c-gray45</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray50">c-gray50</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray55">c-gray55</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray60">c-gray60</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray65">c-gray65</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray70">c-gray70</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray75">c-gray75</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray80">c-gray80</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray85">c-gray85</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample c-gray90">c-gray90</div>
+  </div>
+</div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="c-gray5"&gt;c-gray5&lt;/div&gt;
+&lt;div class="c-gray10"&gt;c-gray10&lt;/div&gt;
+&lt;div class="c-gray15"&gt;c-gray15&lt;/div&gt;
+&lt;div class="c-gray20"&gt;c-gray20&lt;/div&gt;
+&lt;div class="c-gray25"&gt;c-gray25&lt;/div&gt;
+&lt;div class="c-gray30"&gt;c-gray30&lt;/div&gt;
+&lt;div class="c-gray35"&gt;c-gray35&lt;/div&gt;
+&lt;div class="c-gray40"&gt;c-gray40&lt;/div&gt;
+&lt;div class="c-gray45"&gt;c-gray45&lt;/div&gt;
+&lt;div class="c-gray50"&gt;c-gray50&lt;/div&gt;
+&lt;div class="c-gray55"&gt;c-gray55&lt;/div&gt;
+&lt;div class="c-gray60"&gt;c-gray60&lt;/div&gt;
+&lt;div class="c-gray65"&gt;c-gray65&lt;/div&gt;
+&lt;div class="c-gray70"&gt;c-gray70&lt;/div&gt;
+&lt;div class="c-gray75"&gt;c-gray75&lt;/div&gt;
+&lt;div class="c-gray80"&gt;c-gray80&lt;/div&gt;
+&lt;div class="c-gray85"&gt;c-gray85&lt;/div&gt;
+&lt;div class="c-gray90"&gt;c-gray90&lt;/div&gt;
+</code></pre>
+
+      <h3>Gray backgrounds</h3>
+      <h5 class="example-heading">Example</h5>
+      <div class="row">
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray5">bg-gray5</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray10">bg-gray10</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray15">bg-gray15</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray20">bg-gray20</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray25">bg-gray25</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray30">bg-gray30</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray35">bg-gray35</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray40">bg-gray40</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray45">bg-gray45</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray50">bg-gray50</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray55">bg-gray55</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray60">bg-gray60</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray65 c-white">bg-gray65</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray70 c-white">bg-gray70</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray75 c-white">bg-gray75</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray80 c-white">bg-gray80</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray85 c-white">bg-gray85</div>
+  </div>
+  <div class="col-sm-3">
+    <div class="color-sample bg-gray90 c-white">bg-gray90</div>
+  </div>
+</div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="bg-gray5"&gt;bg-gray5&lt;/div&gt;
+&lt;div class="bg-gray10"&gt;bg-gray10&lt;/div&gt;
+&lt;div class="bg-gray15"&gt;bg-gray15&lt;/div&gt;
+&lt;div class="bg-gray20"&gt;bg-gray20&lt;/div&gt;
+&lt;div class="bg-gray25"&gt;bg-gray25&lt;/div&gt;
+&lt;div class="bg-gray30"&gt;bg-gray30&lt;/div&gt;
+&lt;div class="bg-gray35"&gt;bg-gray35&lt;/div&gt;
+&lt;div class="bg-gray40"&gt;bg-gray40&lt;/div&gt;
+&lt;div class="bg-gray45"&gt;bg-gray45&lt;/div&gt;
+&lt;div class="bg-gray50"&gt;bg-gray50&lt;/div&gt;
+&lt;div class="bg-gray55"&gt;bg-gray55&lt;/div&gt;
+&lt;div class="bg-gray60"&gt;bg-gray60&lt;/div&gt;
+&lt;div class="bg-gray65"&gt;bg-gray65&lt;/div&gt;
+&lt;div class="bg-gray70"&gt;bg-gray70&lt;/div&gt;
+&lt;div class="bg-gray75"&gt;bg-gray75&lt;/div&gt;
+&lt;div class="bg-gray80"&gt;bg-gray80&lt;/div&gt;
+&lt;div class="bg-gray85"&gt;bg-gray85&lt;/div&gt;
+&lt;div class="bg-gray90"&gt;bg-gray90&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="font">Font helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <div class="row">
+  <div class="col-sm-6">
+    <h3 class="mar-t-0">All sizes</h3>
+    <div class="font50">font50</div>
+    <div class="font48">font48</div>
+    <div class="font46">font46</div>
+    <div class="font44">font44</div>
+    <div class="font42">font42</div>
+    <div class="font40">font40</div>
+    <div class="font38">font38</div>
+    <div class="font36">font36</div>
+    <div class="font34">font34</div>
+    <div class="font32">font32</div>
+    <div class="font30">font30</div>
+    <div class="font28">font28</div>
+    <div class="font26">font26</div>
+    <div class="font24">font24</div>
+    <div class="font22">font22</div>
+    <div class="font20">font20</div>
+    <div class="font18">font18</div>
+    <div class="font16">font16</div>
+    <div class="font14">font14</div>
+    <div class="font12">font12</div>
+    <div class="font10">font10</div>
+  </div>
+  <div class="col-sm-6 visible-xs">
+    <h3 class="mar-t-0">xs only</h3>
+    <div class="font50-xs">font50-xs</div>
+    <div class="font48-xs">font48-xs</div>
+    <div class="font46-xs">font46-xs</div>
+    <div class="font44-xs">font44-xs</div>
+    <div class="font42-xs">font42-xs</div>
+    <div class="font40-xs">font40-xs</div>
+    <div class="font38-xs">font38-xs</div>
+    <div class="font36-xs">font36-xs</div>
+    <div class="font34-xs">font34-xs</div>
+    <div class="font32-xs">font32-xs</div>
+    <div class="font30-xs">font30-xs</div>
+    <div class="font28-xs">font28-xs</div>
+    <div class="font26-xs">font26-xs</div>
+    <div class="font24-xs">font24-xs</div>
+    <div class="font22-xs">font22-xs</div>
+    <div class="font20-xs">font20-xs</div>
+    <div class="font18-xs">font18-xs</div>
+    <div class="font16-xs">font16-xs</div>
+    <div class="font14-xs">font14-xs</div>
+    <div class="font12-xs">font12-xs</div>
+    <div class="font10-xs">font10-xs</div>
+  </div>
+  <div class="col-sm-6 visible-sm">
+    <h3 class="mar-t-0">sm only</h3>
+    <div class="font50-sm">font50-sm</div>
+    <div class="font48-sm">font48-sm</div>
+    <div class="font46-sm">font46-sm</div>
+    <div class="font44-sm">font44-sm</div>
+    <div class="font42-sm">font42-sm</div>
+    <div class="font40-sm">font40-sm</div>
+    <div class="font38-sm">font38-sm</div>
+    <div class="font36-sm">font36-sm</div>
+    <div class="font34-sm">font34-sm</div>
+    <div class="font32-sm">font32-sm</div>
+    <div class="font30-sm">font30-sm</div>
+    <div class="font28-sm">font28-sm</div>
+    <div class="font26-sm">font26-sm</div>
+    <div class="font24-sm">font24-sm</div>
+    <div class="font22-sm">font22-sm</div>
+    <div class="font20-sm">font20-sm</div>
+    <div class="font18-sm">font18-sm</div>
+    <div class="font16-sm">font16-sm</div>
+    <div class="font14-sm">font14-sm</div>
+    <div class="font12-sm">font12-sm</div>
+    <div class="font10-sm">font10-sm</div>
+  </div>
+  <div class="col-sm-6 visible-md">
+    <h3 class="mar-t-0">md only</h3>
+    <div class="font50-md">font50-md</div>
+    <div class="font48-md">font48-md</div>
+    <div class="font46-md">font46-md</div>
+    <div class="font44-md">font44-md</div>
+    <div class="font42-md">font42-md</div>
+    <div class="font40-md">font40-md</div>
+    <div class="font38-md">font38-md</div>
+    <div class="font36-md">font36-md</div>
+    <div class="font34-md">font34-md</div>
+    <div class="font32-md">font32-md</div>
+    <div class="font30-md">font30-md</div>
+    <div class="font28-md">font28-md</div>
+    <div class="font26-md">font26-md</div>
+    <div class="font24-md">font24-md</div>
+    <div class="font22-md">font22-md</div>
+    <div class="font20-md">font20-md</div>
+    <div class="font18-md">font18-md</div>
+    <div class="font16-md">font16-md</div>
+    <div class="font14-md">font14-md</div>
+    <div class="font12-md">font12-md</div>
+    <div class="font10-md">font10-md</div>
+  </div>
+  <div class="col-sm-6 visible-lg">
+    <h3 class="mar-t-0">lg only</h3>
+    <div class="font50-lg">font50-lg</div>
+    <div class="font48-lg">font48-lg</div>
+    <div class="font46-lg">font46-lg</div>
+    <div class="font44-lg">font44-lg</div>
+    <div class="font42-lg">font42-lg</div>
+    <div class="font40-lg">font40-lg</div>
+    <div class="font38-lg">font38-lg</div>
+    <div class="font36-lg">font36-lg</div>
+    <div class="font34-lg">font34-lg</div>
+    <div class="font32-lg">font32-lg</div>
+    <div class="font30-lg">font30-lg</div>
+    <div class="font28-lg">font28-lg</div>
+    <div class="font26-lg">font26-lg</div>
+    <div class="font24-lg">font24-lg</div>
+    <div class="font22-lg">font22-lg</div>
+    <div class="font20-lg">font20-lg</div>
+    <div class="font18-lg">font18-lg</div>
+    <div class="font16-lg">font16-lg</div>
+    <div class="font14-lg">font14-lg</div>
+    <div class="font12-lg">font12-lg</div>
+    <div class="font10-lg">font10-lg</div>
+  </div>
+</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- all sizes --&gt;
+&lt;div class="font40"&gt;font40&lt;/div&gt;
+&lt;div class="font38"&gt;font38&lt;/div&gt;
+&lt;div class="font36"&gt;font36&lt;/div&gt;
+&lt;div class="font34"&gt;font34&lt;/div&gt;
+&lt;div class="font32"&gt;font32&lt;/div&gt;
+&lt;div class="font30"&gt;font30&lt;/div&gt;
+&lt;div class="font28"&gt;font28&lt;/div&gt;
+&lt;div class="font26"&gt;font26&lt;/div&gt;
+&lt;div class="font24"&gt;font24&lt;/div&gt;
+&lt;div class="font22"&gt;font22&lt;/div&gt;
+&lt;div class="font20"&gt;font20&lt;/div&gt;
+&lt;div class="font18"&gt;font18&lt;/div&gt;
+&lt;div class="font16"&gt;font16&lt;/div&gt;
+&lt;div class="font14"&gt;font14&lt;/div&gt;
+&lt;div class="font12"&gt;font12&lt;/div&gt;
+&lt;div class="font10"&gt;font10&lt;/div&gt;
+
+&lt;!-- XS only --&gt;
+&lt;div class="font40-xs"&gt;font40-xs&lt;/div&gt;
+&lt;div class="font38-xs"&gt;font38-xs&lt;/div&gt;
+&lt;div class="font36-xs"&gt;font36-xs&lt;/div&gt;
+&lt;div class="font34-xs"&gt;font34-xs&lt;/div&gt;
+&lt;div class="font32-xs"&gt;font32-xs&lt;/div&gt;
+&lt;div class="font30-xs"&gt;font30-xs&lt;/div&gt;
+&lt;div class="font28-xs"&gt;font28-xs&lt;/div&gt;
+&lt;div class="font26-xs"&gt;font26-xs&lt;/div&gt;
+&lt;div class="font24-xs"&gt;font24-xs&lt;/div&gt;
+&lt;div class="font22-xs"&gt;font22-xs&lt;/div&gt;
+&lt;div class="font20-xs"&gt;font20-xs&lt;/div&gt;
+&lt;div class="font18-xs"&gt;font18-xs&lt;/div&gt;
+&lt;div class="font16-xs"&gt;font16-xs&lt;/div&gt;
+&lt;div class="font14-xs"&gt;font14-xs&lt;/div&gt;
+&lt;div class="font12-xs"&gt;font12-xs&lt;/div&gt;
+&lt;div class="font10-xs"&gt;font10-xs&lt;/div&gt;
+
+&lt;!-- SM only --&gt;
+&lt;div class="font40-sm"&gt;font40-sm&lt;/div&gt;
+&lt;div class="font38-sm"&gt;font38-sm&lt;/div&gt;
+&lt;div class="font36-sm"&gt;font36-sm&lt;/div&gt;
+&lt;div class="font34-sm"&gt;font34-sm&lt;/div&gt;
+&lt;div class="font32-sm"&gt;font32-sm&lt;/div&gt;
+&lt;div class="font30-sm"&gt;font30-sm&lt;/div&gt;
+&lt;div class="font28-sm"&gt;font28-sm&lt;/div&gt;
+&lt;div class="font26-sm"&gt;font26-sm&lt;/div&gt;
+&lt;div class="font24-sm"&gt;font24-sm&lt;/div&gt;
+&lt;div class="font22-sm"&gt;font22-sm&lt;/div&gt;
+&lt;div class="font20-sm"&gt;font20-sm&lt;/div&gt;
+&lt;div class="font18-sm"&gt;font18-sm&lt;/div&gt;
+&lt;div class="font16-sm"&gt;font16-sm&lt;/div&gt;
+&lt;div class="font14-sm"&gt;font14-sm&lt;/div&gt;
+&lt;div class="font12-sm"&gt;font12-sm&lt;/div&gt;
+&lt;div class="font10-sm"&gt;font10-sm&lt;/div&gt;
+
+&lt;!-- MD only --&gt;
+&lt;div class="font40-md"&gt;font40-md&lt;/div&gt;
+&lt;div class="font38-md"&gt;font38-md&lt;/div&gt;
+&lt;div class="font36-md"&gt;font36-md&lt;/div&gt;
+&lt;div class="font34-md"&gt;font34-md&lt;/div&gt;
+&lt;div class="font32-md"&gt;font32-md&lt;/div&gt;
+&lt;div class="font30-md"&gt;font30-md&lt;/div&gt;
+&lt;div class="font28-md"&gt;font28-md&lt;/div&gt;
+&lt;div class="font26-md"&gt;font26-md&lt;/div&gt;
+&lt;div class="font24-md"&gt;font24-md&lt;/div&gt;
+&lt;div class="font22-md"&gt;font22-md&lt;/div&gt;
+&lt;div class="font20-md"&gt;font20-md&lt;/div&gt;
+&lt;div class="font18-md"&gt;font18-md&lt;/div&gt;
+&lt;div class="font16-md"&gt;font16-md&lt;/div&gt;
+&lt;div class="font14-md"&gt;font14-md&lt;/div&gt;
+&lt;div class="font12-md"&gt;font12-md&lt;/div&gt;
+&lt;div class="font10-md"&gt;font10-md&lt;/div&gt;
+
+&lt;!-- LG only --&gt;
+&lt;div class="font40-lg"&gt;font40-lg&lt;/div&gt;
+&lt;div class="font38-lg"&gt;font38-lg&lt;/div&gt;
+&lt;div class="font36-lg"&gt;font36-lg&lt;/div&gt;
+&lt;div class="font34-lg"&gt;font34-lg&lt;/div&gt;
+&lt;div class="font32-lg"&gt;font32-lg&lt;/div&gt;
+&lt;div class="font30-lg"&gt;font30-lg&lt;/div&gt;
+&lt;div class="font28-lg"&gt;font28-lg&lt;/div&gt;
+&lt;div class="font26-lg"&gt;font26-lg&lt;/div&gt;
+&lt;div class="font24-lg"&gt;font24-lg&lt;/div&gt;
+&lt;div class="font22-lg"&gt;font22-lg&lt;/div&gt;
+&lt;div class="font20-lg"&gt;font20-lg&lt;/div&gt;
+&lt;div class="font18-lg"&gt;font18-lg&lt;/div&gt;
+&lt;div class="font16-lg"&gt;font16-lg&lt;/div&gt;
+&lt;div class="font14-lg"&gt;font14-lg&lt;/div&gt;
+&lt;div class="font12-lg"&gt;font12-lg&lt;/div&gt;
+&lt;div class="font10-lg"&gt;font10-lg&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="hidden">Hidden helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+       <div class="hidden">Hidden at all sizes</div>
+<div class="hidden-xs">Hidden at xs only</div>
+<div class="hidden-sm">Hidden at sm only</div>
+<div class="hidden-md">Hidden at md only</div>
+<div class="hidden-lg">Hidden at lg only</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="hidden"&gt;Hidden at all sizes&lt;/div&gt;
+&lt;div class="hidden-xs"&gt;Hidden at xs only&lt;/div&gt;
+&lt;div class="hidden-sm"&gt;Hidden at sm only&lt;/div&gt;
+&lt;div class="hidden-md"&gt;Hidden at md only&lt;/div&gt;
+&lt;div class="hidden-lg"&gt;Hidden at lg only&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="visible">Visible helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <div class="visible-xs">visible at xs only</div>
+<div class="visible-sm">visible at sm only</div>
+<div class="visible-md">visible at md only</div>
+<div class="visible-lg">visible at lg only</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="visible-xs"&gt;visible at xs only&lt;/div&gt;
+&lt;div class="visible-sm"&gt;visible at sm only&lt;/div&gt;
+&lt;div class="visible-md"&gt;visible at md only&lt;/div&gt;
+&lt;div class="visible-lg"&gt;visible at lg only&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="float">Float helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <h3 class="mar-t-0">All sizes</h3>
+<div class="clear-both float-left">float-left</div>
+<div class="clear-both float-right">float-right</div>
+<div class="clear-both float-none">float-none</div>
+
+<h3>xs only</h3>
+<div class="clear-both float-left-xs">float-left-xs</div>
+<div class="clear-both float-right-xs">float-right-xs</div>
+<div class="clear-both float-none-xs">float-none-xs</div>
+
+<h3>sm only</h3>
+<div class="clear-both float-left-sm">float-left-sm</div>
+<div class="clear-both float-right-sm">float-right-sm</div>
+<div class="clear-both float-none-sm">float-none-sm</div>
+
+<h3>md only</h3>
+<div class="clear-both float-left-md">float-left-md</div>
+<div class="clear-both float-right-md">float-right-md</div>
+<div class="clear-both float-none-md">float-none-md</div>
+
+<h3>lg only</h3>
+<div class="clear-both float-left-lg">float-left-lg</div>
+<div class="clear-both float-right-lg">float-right-lg</div>
+<div class="clear-both float-none-lg">float-none-lg</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="float-left"&gt;float-left&lt;/div&gt;
+&lt;div class="float-right"&gt;float-right&lt;/div&gt;
+&lt;div class="float-none"&gt;float-none&lt;/div&gt;
+&lt;div class="clear-left"&gt;clear-left&lt;/div&gt;
+&lt;div class="clear-right"&gt;clear-right&lt;/div&gt;
+&lt;div class="clear-both"&gt;clear-both&lt;/div&gt;
+
+&lt;!-- XS only --&gt;
+&lt;div class="float-left-xs"&gt;float-left-xs&lt;/div&gt;
+&lt;div class="float-right-xs"&gt;float-right-xs&lt;/div&gt;
+&lt;div class="float-none-xs"&gt;float-none-xs&lt;/div&gt;
+
+&lt;!-- SM only --&gt;
+&lt;div class="float-left-sm"&gt;float-left-sm&lt;/div&gt;
+&lt;div class="float-right-sm"&gt;float-right-sm&lt;/div&gt;
+&lt;div class="float-none-sm"&gt;float-none-sm&lt;/div&gt;
+
+&lt;!-- MD only --&gt;
+&lt;div class="float-left-md"&gt;float-left-md&lt;/div&gt;
+&lt;div class="float-right-md"&gt;float-right-md&lt;/div&gt;
+&lt;div class="float-none-md"&gt;float-none-md&lt;/div&gt;
+
+&lt;!-- LG only --&gt;
+&lt;div class="float-left-lg"&gt;float-left-lg&lt;/div&gt;
+&lt;div class="float-right-lg"&gt;float-right-lg&lt;/div&gt;
+&lt;div class="float-none-lg"&gt;float-none-lg&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="center">Center helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <h3 class="mar-t-0">All sizes</h3>
+<div class="container-narrow bg-gray15 center">.center</div>
+
+<h3>xs only</h3>
+<div class="container-narrow bg-gray15 center-xs">.center-xs</div>
+
+<h3>sm only</h3>
+<div class="container-narrow bg-gray15 center-sm">.center-sm</div>
+
+<h3>md only</h3>
+<div class="container-narrow bg-gray15 center-md">.center-md</div>
+
+<h3>lg only</h3>
+<div class="container-narrow bg-gray15 center-lg">.center-lg</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="center"&gt;.center&lt;/div&gt;
+
+&lt;!-- XS only --&gt;
+&lt;div class="center-xs"&gt;.center-xs&lt;/div&gt;
+
+&lt;!-- SM only --&gt;
+&lt;div class="center-sm"&gt;.center-sm&lt;/div&gt;
+
+&lt;!-- MD only --&gt;
+&lt;div class="center-md"&gt;.center-md&lt;/div&gt;
+
+&lt;!-- LG only --&gt;
+&lt;div class="center-lg"&gt;.center-lg&lt;/div&gt;
+</code></pre>
+       <hr>
+
+      <h2 id="text-align">Text-align helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <h3 class="mar-t-0">All sizes</h3>
+<div class="text-left">.text-left</div>
+<div class="text-right">.text-right</div>
+<div class="text-center">.text-center</div>
+
+<h3>xs only</h3>
+<div class="text-left-xs">.text-left-xs</div>
+<div class="text-right-xs">.text-right-xs</div>
+<div class="text-center-xs">.text-center-xs</div>
+
+<h3>sm only</h3>
+<div class="text-left-sm">.text-left-sm</div>
+<div class="text-right-sm">.text-right-sm</div>
+<div class="text-center-sm">.text-center-sm</div>
+
+<h3>md only</h3>
+<div class="text-left-md">.text-left-md</div>
+<div class="text-right-md">.text-right-md</div>
+<div class="text-center-md">.text-center-md</div>
+
+<h3>lg only</h3>
+<div class="text-left-lg">.text-left-lg</div>
+<div class="text-right-lg">.text-right-lg</div>
+<div class="text-center-lg">.text-center-lg</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="text-left"&gt;.text-left&lt;/div&gt;
+&lt;div class="text-right"&gt;.text-right&lt;/div&gt;
+&lt;div class="text-center"&gt;.text-center&lt;/div&gt;
+
+&lt;!-- XS only --&gt;
+&lt;div class="text-left-xs"&gt;.text-left-xs&lt;/div&gt;
+&lt;div class="text-right-xs"&gt;.text-right-xs&lt;/div&gt;
+&lt;div class="text-center-xs"&gt;.text-center-xs&lt;/div&gt;
+
+&lt;!-- SM only --&gt;
+&lt;div class="text-left-sm"&gt;.text-left-sm&lt;/div&gt;
+&lt;div class="text-right-sm"&gt;.text-right-sm&lt;/div&gt;
+&lt;div class="text-center-sm"&gt;.text-center-sm&lt;/div&gt;
+
+&lt;!-- MD only --&gt;
+&lt;div class="text-left-md"&gt;.text-left-md&lt;/div&gt;
+&lt;div class="text-right-md"&gt;.text-right-md&lt;/div&gt;
+&lt;div class="text-center-md"&gt;.text-center-md&lt;/div&gt;
+
+&lt;!-- LG only --&gt;
+&lt;div class="text-left-lg"&gt;.text-left-lg&lt;/div&gt;
+&lt;div class="text-right-lg"&gt;.text-right-lg&lt;/div&gt;
+&lt;div class="text-center-lg"&gt;.text-center-lg&lt;/div&gt;
+</code></pre>
+       <hr>
+
+      <h2 id="margin">Margin-helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <h3 class="mar-t-0">margin-top: all sizes</h3>
+<div class="mar-t-0 bg-gray10">mar-t-0</div>
+<div class="mar-t-h bg-gray10">mar-t-h</div>
+<div class="mar-t-1 bg-gray10">mar-t-1</div>
+<div class="mar-t-2 bg-gray10">mar-t-2</div>
+<div class="mar-t-3 bg-gray10">mar-t-3</div>
+
+<h3>margin-top: xs only</h3>
+<div class="mar-t-0-xs bg-gray10">mar-t-0-xs</div>
+<div class="mar-t-h-xs bg-gray10">mar-t-h-xs</div>
+<div class="mar-t-1-xs bg-gray10">mar-t-1-xs</div>
+<div class="mar-t-2-xs bg-gray10">mar-t-2-xs</div>
+<div class="mar-t-3-xs bg-gray10">mar-t-3-xs</div>
+
+<h3>margin-top: sm only</h3>
+<div class="mar-t-0-sm bg-gray10">mar-t-0-sm</div>
+<div class="mar-t-h-sm bg-gray10">mar-t-h-sm</div>
+<div class="mar-t-1-sm bg-gray10">mar-t-1-sm</div>
+<div class="mar-t-2-sm bg-gray10">mar-t-2-sm</div>
+<div class="mar-t-3-sm bg-gray10">mar-t-3-sm</div>
+
+<h3>margin-top: md only</h3>
+<div class="mar-t-0-md bg-gray10">mar-t-0-md</div>
+<div class="mar-t-h-md bg-gray10">mar-t-h-md</div>
+<div class="mar-t-1-md bg-gray10">mar-t-1-md</div>
+<div class="mar-t-2-md bg-gray10">mar-t-2-md</div>
+<div class="mar-t-3-md bg-gray10">mar-t-3-md</div>
+
+<h3>margin-top: lg only</h3>
+<div class="mar-t-0-lg bg-gray10">mar-t-0-lg</div>
+<div class="mar-t-h-lg bg-gray10">mar-t-h-lg</div>
+<div class="mar-t-1-lg bg-gray10">mar-t-1-lg</div>
+<div class="mar-t-2-lg bg-gray10">mar-t-2-lg</div>
+<div class="mar-t-3-lg bg-gray10">mar-t-3-lg</div>
+        <h3>margin-right: all sizes</h3>
+<div class="mar-r-0 bg-gray10">mar-r-0</div>
+<div class="mar-r-h bg-gray10">mar-r-h</div>
+<div class="mar-r-1 bg-gray10">mar-r-1</div>
+<div class="mar-r-2 bg-gray10">mar-r-2</div>
+<div class="mar-r-3 bg-gray10">mar-r-3</div>
+
+<h3>margin-right: xs only</h3>
+<div class="mar-r-0-xs bg-gray10">mar-r-0-xs</div>
+<div class="mar-r-h-xs bg-gray10">mar-r-h-xs</div>
+<div class="mar-r-1-xs bg-gray10">mar-r-1-xs</div>
+<div class="mar-r-2-xs bg-gray10">mar-r-2-xs</div>
+<div class="mar-r-3-xs bg-gray10">mar-r-3-xs</div>
+
+<h3>margin-right: sm only</h3>
+<div class="mar-r-0-sm bg-gray10">mar-r-0-sm</div>
+<div class="mar-r-h-sm bg-gray10">mar-r-h-sm</div>
+<div class="mar-r-1-sm bg-gray10">mar-r-1-sm</div>
+<div class="mar-r-2-sm bg-gray10">mar-r-2-sm</div>
+<div class="mar-r-3-sm bg-gray10">mar-r-3-sm</div>
+
+<h3>margin-right: md only</h3>
+<div class="mar-r-0-md bg-gray10">mar-r-0-md</div>
+<div class="mar-r-h-md bg-gray10">mar-r-h-md</div>
+<div class="mar-r-1-md bg-gray10">mar-r-1-md</div>
+<div class="mar-r-2-md bg-gray10">mar-r-2-md</div>
+<div class="mar-r-3-md bg-gray10">mar-r-3-md</div>
+
+<h3>margin-right: lg only</h3>
+<div class="mar-r-0-lg bg-gray10">mar-r-0-lg</div>
+<div class="mar-r-h-lg bg-gray10">mar-r-h-lg</div>
+<div class="mar-r-1-lg bg-gray10">mar-r-1-lg</div>
+<div class="mar-r-2-lg bg-gray10">mar-r-2-lg</div>
+<div class="mar-r-3-lg bg-gray10">mar-r-3-lg</div>
+        <h3>margin-bottom: all sizes</h3>
+<div class="mar-b-0 bg-gray10">mar-b-0</div>
+<div class="mar-b-h bg-gray10">mar-b-h</div>
+<div class="mar-b-1 bg-gray10">mar-b-1</div>
+<div class="mar-b-2 bg-gray10">mar-b-2</div>
+<div class="mar-b-3 bg-gray10">mar-b-3</div>
+
+<h3>margin-bottom: xs only</h3>
+<div class="mar-b-0-xs bg-gray10">mar-b-0-xs</div>
+<div class="mar-b-h-xs bg-gray10">mar-b-h-xs</div>
+<div class="mar-b-1-xs bg-gray10">mar-b-1-xs</div>
+<div class="mar-b-2-xs bg-gray10">mar-b-2-xs</div>
+<div class="mar-b-3-xs bg-gray10">mar-b-3-xs</div>
+
+<h3>margin-bottom: sm only</h3>
+<div class="mar-b-0-sm bg-gray10">mar-b-0-sm</div>
+<div class="mar-b-h-sm bg-gray10">mar-b-h-sm</div>
+<div class="mar-b-1-sm bg-gray10">mar-b-1-sm</div>
+<div class="mar-b-2-sm bg-gray10">mar-b-2-sm</div>
+<div class="mar-b-3-sm bg-gray10">mar-b-3-sm</div>
+
+<h3>margin-bottom: md only</h3>
+<div class="mar-b-0-md bg-gray10">mar-b-0-md</div>
+<div class="mar-b-h-md bg-gray10">mar-b-h-md</div>
+<div class="mar-b-1-md bg-gray10">mar-b-1-md</div>
+<div class="mar-b-2-md bg-gray10">mar-b-2-md</div>
+<div class="mar-b-3-md bg-gray10">mar-b-3-md</div>
+
+<h3>margin-bottom: lg only</h3>
+<div class="mar-b-0-lg bg-gray10">mar-b-0-lg</div>
+<div class="mar-b-h-lg bg-gray10">mar-b-h-lg</div>
+<div class="mar-b-1-lg bg-gray10">mar-b-1-lg</div>
+<div class="mar-b-2-lg bg-gray10">mar-b-2-lg</div>
+<div class="mar-b-3-lg bg-gray10">mar-b-3-lg</div>
+        <h3>margin-left: all sizes</h3>
+<div class="mar-l-0 bg-gray10">mar-l-0</div>
+<div class="mar-l-h bg-gray10">mar-l-h</div>
+<div class="mar-l-1 bg-gray10">mar-l-1</div>
+<div class="mar-l-2 bg-gray10">mar-l-2</div>
+<div class="mar-l-3 bg-gray10">mar-l-3</div>
+
+<h3>margin-left: xs only</h3>
+<div class="mar-l-0-xs bg-gray10">mar-l-0-xs</div>
+<div class="mar-l-h-xs bg-gray10">mar-l-h-xs</div>
+<div class="mar-l-1-xs bg-gray10">mar-l-1-xs</div>
+<div class="mar-l-2-xs bg-gray10">mar-l-2-xs</div>
+<div class="mar-l-3-xs bg-gray10">mar-l-3-xs</div>
+
+<h3>margin-left: sm only</h3>
+<div class="mar-l-0-sm bg-gray10">mar-l-0-sm</div>
+<div class="mar-l-h-sm bg-gray10">mar-l-h-sm</div>
+<div class="mar-l-1-sm bg-gray10">mar-l-1-sm</div>
+<div class="mar-l-2-sm bg-gray10">mar-l-2-sm</div>
+<div class="mar-l-3-sm bg-gray10">mar-l-3-sm</div>
+
+<h3>margin-left: md only</h3>
+<div class="mar-l-0-md bg-gray10">mar-l-0-md</div>
+<div class="mar-l-h-md bg-gray10">mar-l-h-md</div>
+<div class="mar-l-1-md bg-gray10">mar-l-1-md</div>
+<div class="mar-l-2-md bg-gray10">mar-l-2-md</div>
+<div class="mar-l-3-md bg-gray10">mar-l-3-md</div>
+
+<h3>margin-left: lg only</h3>
+<div class="mar-l-0-lg bg-gray10">mar-l-0-lg</div>
+<div class="mar-l-h-lg bg-gray10">mar-l-h-lg</div>
+<div class="mar-l-1-lg bg-gray10">mar-l-1-lg</div>
+<div class="mar-l-2-lg bg-gray10">mar-l-2-lg</div>
+<div class="mar-l-3-lg bg-gray10">mar-l-3-lg</div>
+        <h3>margin-x (margin-left and margin-right): all sizes</h3>
+<div class="mar-x-0 bg-gray10">mar-x-0</div>
+<div class="mar-x-h bg-gray10">mar-x-h</div>
+<div class="mar-x-1 bg-gray10">mar-x-1</div>
+<div class="mar-x-2 bg-gray10">mar-x-2</div>
+<div class="mar-x-3 bg-gray10">mar-x-3</div>
+
+<h3>margin-x (margin-left and margin-right): xs only</h3>
+<div class="mar-x-0-xs bg-gray10">mar-x-0-xs</div>
+<div class="mar-x-h-xs bg-gray10">mar-x-h-xs</div>
+<div class="mar-x-1-xs bg-gray10">mar-x-1-xs</div>
+<div class="mar-x-2-xs bg-gray10">mar-x-2-xs</div>
+<div class="mar-x-3-xs bg-gray10">mar-x-3-xs</div>
+
+<h3>margin-x (margin-left and margin-right): sm only</h3>
+<div class="mar-x-0-sm bg-gray10">mar-x-0-sm</div>
+<div class="mar-x-h-sm bg-gray10">mar-x-h-sm</div>
+<div class="mar-x-1-sm bg-gray10">mar-x-1-sm</div>
+<div class="mar-x-2-sm bg-gray10">mar-x-2-sm</div>
+<div class="mar-x-3-sm bg-gray10">mar-x-3-sm</div>
+
+<h3>margin-x (margin-left and margin-right): md only</h3>
+<div class="mar-x-0-md bg-gray10">mar-x-0-md</div>
+<div class="mar-x-h-md bg-gray10">mar-x-h-md</div>
+<div class="mar-x-1-md bg-gray10">mar-x-1-md</div>
+<div class="mar-x-2-md bg-gray10">mar-x-2-md</div>
+<div class="mar-x-3-md bg-gray10">mar-x-3-md</div>
+
+<h3>margin-x (margin-left and margin-right): lg only</h3>
+<div class="mar-x-0-lg bg-gray10">mar-x-0-lg</div>
+<div class="mar-x-h-lg bg-gray10">mar-x-h-lg</div>
+<div class="mar-x-1-lg bg-gray10">mar-x-1-lg</div>
+<div class="mar-x-2-lg bg-gray10">mar-x-2-lg</div>
+<div class="mar-x-3-lg bg-gray10">mar-x-3-lg</div>
+        <h3>margin-y (margin-top and margin-bottom): all sizes</h3>
+<div class="mar-y-0 bg-gray10">mar-y-0</div>
+<div class="mar-y-h bg-gray10">mar-y-h</div>
+<div class="mar-y-1 bg-gray10">mar-y-1</div>
+<div class="mar-y-2 bg-gray10">mar-y-2</div>
+<div class="mar-y-3 bg-gray10">mar-y-3</div>
+
+<h3>margin-y (margin-top and margin-bottom): xs only</h3>
+<div class="mar-y-0-xs bg-gray10">mar-y-0-xs</div>
+<div class="mar-y-h-xs bg-gray10">mar-y-h-xs</div>
+<div class="mar-y-1-xs bg-gray10">mar-y-1-xs</div>
+<div class="mar-y-2-xs bg-gray10">mar-y-2-xs</div>
+<div class="mar-y-3-xs bg-gray10">mar-y-3-xs</div>
+
+<h3>margin-y (margin-top and margin-bottom): sm only</h3>
+<div class="mar-y-0-sm bg-gray10">mar-y-0-sm</div>
+<div class="mar-y-h-sm bg-gray10">mar-y-h-sm</div>
+<div class="mar-y-1-sm bg-gray10">mar-y-1-sm</div>
+<div class="mar-y-2-sm bg-gray10">mar-y-2-sm</div>
+<div class="mar-y-3-sm bg-gray10">mar-y-3-sm</div>
+
+<h3>margin-y (margin-top and margin-bottom): md only</h3>
+<div class="mar-y-0-md bg-gray10">mar-y-0-md</div>
+<div class="mar-y-h-md bg-gray10">mar-y-h-md</div>
+<div class="mar-y-1-md bg-gray10">mar-y-1-md</div>
+<div class="mar-y-2-md bg-gray10">mar-y-2-md</div>
+<div class="mar-y-3-md bg-gray10">mar-y-3-md</div>
+
+<h3>margin-y (margin-top and margin-bottom): lg only</h3>
+<div class="mar-y-0-lg bg-gray10">mar-y-0-lg</div>
+<div class="mar-y-h-lg bg-gray10">mar-y-h-lg</div>
+<div class="mar-y-1-lg bg-gray10">mar-y-1-lg</div>
+<div class="mar-y-2-lg bg-gray10">mar-y-2-lg</div>
+<div class="mar-y-3-lg bg-gray10">mar-y-3-lg</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- margin-top: all sizes --&gt;
+&lt;div class="mar-t-0"&gt;mar-t-0&lt;/div&gt;
+&lt;div class="mar-t-h"&gt;mar-t-h&lt;/div&gt;
+&lt;div class="mar-t-1"&gt;mar-t-1&lt;/div&gt;
+&lt;div class="mar-t-2"&gt;mar-t-2&lt;/div&gt;
+&lt;div class="mar-t-3"&gt;mar-t-3&lt;/div&gt;
+
+&lt;!-- margin-top: xs only --&gt;
+&lt;div class="mar-t-0-xs"&gt;mar-t-0-xs&lt;/div&gt;
+&lt;div class="mar-t-h-xs"&gt;mar-t-h-xs&lt;/div&gt;
+&lt;div class="mar-t-1-xs"&gt;mar-t-1-xs&lt;/div&gt;
+&lt;div class="mar-t-2-xs"&gt;mar-t-2-xs&lt;/div&gt;
+&lt;div class="mar-t-3-xs"&gt;mar-t-3-xs&lt;/div&gt;
+
+&lt;!-- margin-top: sm only --&gt;
+&lt;div class="mar-t-0-sm"&gt;mar-t-0-sm&lt;/div&gt;
+&lt;div class="mar-t-h-sm"&gt;mar-t-h-sm&lt;/div&gt;
+&lt;div class="mar-t-1-sm"&gt;mar-t-1-sm&lt;/div&gt;
+&lt;div class="mar-t-2-sm"&gt;mar-t-2-sm&lt;/div&gt;
+&lt;div class="mar-t-3-sm"&gt;mar-t-3-sm&lt;/div&gt;
+
+&lt;!-- margin-top: md only --&gt;
+&lt;div class="mar-t-0-md"&gt;mar-t-0-md&lt;/div&gt;
+&lt;div class="mar-t-h-md"&gt;mar-t-h-md&lt;/div&gt;
+&lt;div class="mar-t-1-md"&gt;mar-t-1-md&lt;/div&gt;
+&lt;div class="mar-t-2-md"&gt;mar-t-2-md&lt;/div&gt;
+&lt;div class="mar-t-3-md"&gt;mar-t-3-md&lt;/div&gt;
+
+&lt;!-- margin-top: lg only --&gt;
+&lt;div class="mar-t-0-lg"&gt;mar-t-0-lg&lt;/div&gt;
+&lt;div class="mar-t-h-lg"&gt;mar-t-h-lg&lt;/div&gt;
+&lt;div class="mar-t-1-lg"&gt;mar-t-1-lg&lt;/div&gt;
+&lt;div class="mar-t-2-lg"&gt;mar-t-2-lg&lt;/div&gt;
+&lt;div class="mar-t-3-lg"&gt;mar-t-3-lg&lt;/div&gt;
+
+&lt;!-- margin-top: all sizes --&gt;
+&lt;div class="mar-r-0"&gt;mar-r-0&lt;/div&gt;
+&lt;div class="mar-r-h"&gt;mar-r-h&lt;/div&gt;
+&lt;div class="mar-r-1"&gt;mar-r-1&lt;/div&gt;
+&lt;div class="mar-r-2"&gt;mar-r-2&lt;/div&gt;
+&lt;div class="mar-r-3"&gt;mar-r-3&lt;/div&gt;
+
+&lt;!-- margin-top: xs only --&gt;
+&lt;div class="mar-r-0-xs"&gt;mar-r-0-xs&lt;/div&gt;
+&lt;div class="mar-r-h-xs"&gt;mar-r-h-xs&lt;/div&gt;
+&lt;div class="mar-r-1-xs"&gt;mar-r-1-xs&lt;/div&gt;
+&lt;div class="mar-r-2-xs"&gt;mar-r-2-xs&lt;/div&gt;
+&lt;div class="mar-r-3-xs"&gt;mar-r-3-xs&lt;/div&gt;
+
+&lt;!-- margin-top: sm only --&gt;
+&lt;div class="mar-r-0-sm"&gt;mar-r-0-sm&lt;/div&gt;
+&lt;div class="mar-r-h-sm"&gt;mar-r-h-sm&lt;/div&gt;
+&lt;div class="mar-r-1-sm"&gt;mar-r-1-sm&lt;/div&gt;
+&lt;div class="mar-r-2-sm"&gt;mar-r-2-sm&lt;/div&gt;
+&lt;div class="mar-r-3-sm"&gt;mar-r-3-sm&lt;/div&gt;
+
+&lt;!-- margin-top: md only --&gt;
+&lt;div class="mar-r-0-md"&gt;mar-r-0-md&lt;/div&gt;
+&lt;div class="mar-r-h-md"&gt;mar-r-h-md&lt;/div&gt;
+&lt;div class="mar-r-1-md"&gt;mar-r-1-md&lt;/div&gt;
+&lt;div class="mar-r-2-md"&gt;mar-r-2-md&lt;/div&gt;
+&lt;div class="mar-r-3-md"&gt;mar-r-3-md&lt;/div&gt;
+
+&lt;!-- margin-top: lg only --&gt;
+&lt;div class="mar-r-0-lg"&gt;mar-r-0-lg&lt;/div&gt;
+&lt;div class="mar-r-h-lg"&gt;mar-r-h-lg&lt;/div&gt;
+&lt;div class="mar-r-1-lg"&gt;mar-r-1-lg&lt;/div&gt;
+&lt;div class="mar-r-2-lg"&gt;mar-r-2-lg&lt;/div&gt;
+&lt;div class="mar-r-3-lg"&gt;mar-r-3-lg&lt;/div&gt;
+
+&lt;!-- margin-right: all sizes --&gt;
+&lt;div class="mar-r-0"&gt;mar-r-0&lt;/div&gt;
+&lt;div class="mar-r-h"&gt;mar-r-h&lt;/div&gt;
+&lt;div class="mar-r-1"&gt;mar-r-1&lt;/div&gt;
+&lt;div class="mar-r-2"&gt;mar-r-2&lt;/div&gt;
+&lt;div class="mar-r-3"&gt;mar-r-3&lt;/div&gt;
+
+&lt;!-- margin-right: xs only --&gt;
+&lt;div class="mar-r-0-xs"&gt;mar-r-0-xs&lt;/div&gt;
+&lt;div class="mar-r-h-xs"&gt;mar-r-h-xs&lt;/div&gt;
+&lt;div class="mar-r-1-xs"&gt;mar-r-1-xs&lt;/div&gt;
+&lt;div class="mar-r-2-xs"&gt;mar-r-2-xs&lt;/div&gt;
+&lt;div class="mar-r-3-xs"&gt;mar-r-3-xs&lt;/div&gt;
+
+&lt;!-- margin-right: sm only --&gt;
+&lt;div class="mar-r-0-sm"&gt;mar-r-0-sm&lt;/div&gt;
+&lt;div class="mar-r-h-sm"&gt;mar-r-h-sm&lt;/div&gt;
+&lt;div class="mar-r-1-sm"&gt;mar-r-1-sm&lt;/div&gt;
+&lt;div class="mar-r-2-sm"&gt;mar-r-2-sm&lt;/div&gt;
+&lt;div class="mar-r-3-sm"&gt;mar-r-3-sm&lt;/div&gt;
+
+&lt;!-- margin-right: md only --&gt;
+&lt;div class="mar-r-0-md"&gt;mar-r-0-md&lt;/div&gt;
+&lt;div class="mar-r-h-md"&gt;mar-r-h-md&lt;/div&gt;
+&lt;div class="mar-r-1-md"&gt;mar-r-1-md&lt;/div&gt;
+&lt;div class="mar-r-2-md"&gt;mar-r-2-md&lt;/div&gt;
+&lt;div class="mar-r-3-md"&gt;mar-r-3-md&lt;/div&gt;
+
+&lt;!-- margin-right: lg only --&gt;
+&lt;div class="mar-r-0-lg"&gt;mar-r-0-lg&lt;/div&gt;
+&lt;div class="mar-r-h-lg"&gt;mar-r-h-lg&lt;/div&gt;
+&lt;div class="mar-r-1-lg"&gt;mar-r-1-lg&lt;/div&gt;
+&lt;div class="mar-r-2-lg"&gt;mar-r-2-lg&lt;/div&gt;
+&lt;div class="mar-r-3-lg"&gt;mar-r-3-lg&lt;/div&gt;
+
+&lt;!-- margin-bottom: all sizes --&gt;
+&lt;div class="mar-b-0"&gt;mar-b-0&lt;/div&gt;
+&lt;div class="mar-b-h"&gt;mar-b-h&lt;/div&gt;
+&lt;div class="mar-b-1"&gt;mar-b-1&lt;/div&gt;
+&lt;div class="mar-b-2"&gt;mar-b-2&lt;/div&gt;
+&lt;div class="mar-b-3"&gt;mar-b-3&lt;/div&gt;
+
+&lt;!-- margin-bottom: xs only --&gt;
+&lt;div class="mar-b-0-xs"&gt;mar-b-0-xs&lt;/div&gt;
+&lt;div class="mar-b-h-xs"&gt;mar-b-h-xs&lt;/div&gt;
+&lt;div class="mar-b-1-xs"&gt;mar-b-1-xs&lt;/div&gt;
+&lt;div class="mar-b-2-xs"&gt;mar-b-2-xs&lt;/div&gt;
+&lt;div class="mar-b-3-xs"&gt;mar-b-3-xs&lt;/div&gt;
+
+&lt;!-- margin-bottom: sm only --&gt;
+&lt;div class="mar-b-0-sm"&gt;mar-b-0-sm&lt;/div&gt;
+&lt;div class="mar-b-h-sm"&gt;mar-b-h-sm&lt;/div&gt;
+&lt;div class="mar-b-1-sm"&gt;mar-b-1-sm&lt;/div&gt;
+&lt;div class="mar-b-2-sm"&gt;mar-b-2-sm&lt;/div&gt;
+&lt;div class="mar-b-3-sm"&gt;mar-b-3-sm&lt;/div&gt;
+
+&lt;!-- margin-bottom: md only --&gt;
+&lt;div class="mar-b-0-md"&gt;mar-b-0-md&lt;/div&gt;
+&lt;div class="mar-b-h-md"&gt;mar-b-h-md&lt;/div&gt;
+&lt;div class="mar-b-1-md"&gt;mar-b-1-md&lt;/div&gt;
+&lt;div class="mar-b-2-md"&gt;mar-b-2-md&lt;/div&gt;
+&lt;div class="mar-b-3-md"&gt;mar-b-3-md&lt;/div&gt;
+
+&lt;!-- margin-bottom: lg only --&gt;
+&lt;div class="mar-b-0-lg"&gt;mar-b-0-lg&lt;/div&gt;
+&lt;div class="mar-b-h-lg"&gt;mar-b-h-lg&lt;/div&gt;
+&lt;div class="mar-b-1-lg"&gt;mar-b-1-lg&lt;/div&gt;
+&lt;div class="mar-b-2-lg"&gt;mar-b-2-lg&lt;/div&gt;
+&lt;div class="mar-b-3-lg"&gt;mar-b-3-lg&lt;/div&gt;
+
+&lt;!-- margin-left: all sizes --&gt;
+&lt;div class="mar-l-0"&gt;mar-l-0&lt;/div&gt;
+&lt;div class="mar-l-h"&gt;mar-l-h&lt;/div&gt;
+&lt;div class="mar-l-1"&gt;mar-l-1&lt;/div&gt;
+&lt;div class="mar-l-2"&gt;mar-l-2&lt;/div&gt;
+&lt;div class="mar-l-3"&gt;mar-l-3&lt;/div&gt;
+
+&lt;!-- margin-left: xs only --&gt;
+&lt;div class="mar-l-0-xs"&gt;mar-l-0-xs&lt;/div&gt;
+&lt;div class="mar-l-h-xs"&gt;mar-l-h-xs&lt;/div&gt;
+&lt;div class="mar-l-1-xs"&gt;mar-l-1-xs&lt;/div&gt;
+&lt;div class="mar-l-2-xs"&gt;mar-l-2-xs&lt;/div&gt;
+&lt;div class="mar-l-3-xs"&gt;mar-l-3-xs&lt;/div&gt;
+
+&lt;!-- margin-left: sm only --&gt;
+&lt;div class="mar-l-0-sm"&gt;mar-l-0-sm&lt;/div&gt;
+&lt;div class="mar-l-h-sm"&gt;mar-l-h-sm&lt;/div&gt;
+&lt;div class="mar-l-1-sm"&gt;mar-l-1-sm&lt;/div&gt;
+&lt;div class="mar-l-2-sm"&gt;mar-l-2-sm&lt;/div&gt;
+&lt;div class="mar-l-3-sm"&gt;mar-l-3-sm&lt;/div&gt;
+
+&lt;!-- margin-left: md only --&gt;
+&lt;div class="mar-l-0-md"&gt;mar-l-0-md&lt;/div&gt;
+&lt;div class="mar-l-h-md"&gt;mar-l-h-md&lt;/div&gt;
+&lt;div class="mar-l-1-md"&gt;mar-l-1-md&lt;/div&gt;
+&lt;div class="mar-l-2-md"&gt;mar-l-2-md&lt;/div&gt;
+&lt;div class="mar-l-3-md"&gt;mar-l-3-md&lt;/div&gt;
+
+&lt;!-- margin-left: lg only --&gt;
+&lt;div class="mar-l-0-lg"&gt;mar-l-0-lg&lt;/div&gt;
+&lt;div class="mar-l-h-lg"&gt;mar-l-h-lg&lt;/div&gt;
+&lt;div class="mar-l-1-lg"&gt;mar-l-1-lg&lt;/div&gt;
+&lt;div class="mar-l-2-lg"&gt;mar-l-2-lg&lt;/div&gt;
+&lt;div class="mar-l-3-lg"&gt;mar-l-3-lg&lt;/div&gt;
+
+&lt;!-- margin-left and margin-right: all sizes --&gt;
+&lt;div class="mar-x-0"&gt;mar-x-0&lt;/div&gt;
+&lt;div class="mar-x-h"&gt;mar-x-h&lt;/div&gt;
+&lt;div class="mar-x-1"&gt;mar-x-1&lt;/div&gt;
+&lt;div class="mar-x-2"&gt;mar-x-2&lt;/div&gt;
+&lt;div class="mar-x-3"&gt;mar-x-3&lt;/div&gt;
+
+&lt;!-- margin-left and margin-right: xs only --&gt;
+&lt;div class="mar-x-0-xs"&gt;mar-x-0-xs&lt;/div&gt;
+&lt;div class="mar-x-h-xs"&gt;mar-x-h-xs&lt;/div&gt;
+&lt;div class="mar-x-1-xs"&gt;mar-x-1-xs&lt;/div&gt;
+&lt;div class="mar-x-2-xs"&gt;mar-x-2-xs&lt;/div&gt;
+&lt;div class="mar-x-3-xs"&gt;mar-x-3-xs&lt;/div&gt;
+
+&lt;!-- margin-left and margin-right: sm only --&gt;
+&lt;div class="mar-x-0-sm"&gt;mar-x-0-sm&lt;/div&gt;
+&lt;div class="mar-x-h-sm"&gt;mar-x-h-sm&lt;/div&gt;
+&lt;div class="mar-x-1-sm"&gt;mar-x-1-sm&lt;/div&gt;
+&lt;div class="mar-x-2-sm"&gt;mar-x-2-sm&lt;/div&gt;
+&lt;div class="mar-x-3-sm"&gt;mar-x-3-sm&lt;/div&gt;
+
+&lt;!-- margin-left and margin-right: md only --&gt;
+&lt;div class="mar-x-0-md"&gt;mar-x-0-md&lt;/div&gt;
+&lt;div class="mar-x-h-md"&gt;mar-x-h-md&lt;/div&gt;
+&lt;div class="mar-x-1-md"&gt;mar-x-1-md&lt;/div&gt;
+&lt;div class="mar-x-2-md"&gt;mar-x-2-md&lt;/div&gt;
+&lt;div class="mar-x-3-md"&gt;mar-x-3-md&lt;/div&gt;
+
+&lt;!-- margin-left and margin-right: lg only --&gt;
+&lt;div class="mar-x-0-lg"&gt;mar-x-0-lg&lt;/div&gt;
+&lt;div class="mar-x-h-lg"&gt;mar-x-h-lg&lt;/div&gt;
+&lt;div class="mar-x-1-lg"&gt;mar-x-1-lg&lt;/div&gt;
+&lt;div class="mar-x-2-lg"&gt;mar-x-2-lg&lt;/div&gt;
+&lt;div class="mar-x-3-lg"&gt;mar-x-3-lg&lt;/div&gt;
+
+&lt;!-- margin-top and margin-bottom: all sizes --&gt;
+&lt;div class="mar-y-0"&gt;mar-y-0&lt;/div&gt;
+&lt;div class="mar-y-h"&gt;mar-y-h&lt;/div&gt;
+&lt;div class="mar-y-1"&gt;mar-y-1&lt;/div&gt;
+&lt;div class="mar-y-2"&gt;mar-y-2&lt;/div&gt;
+&lt;div class="mar-y-3"&gt;mar-y-3&lt;/div&gt;
+
+&lt;!-- margin-top and margin-bottom: xs only --&gt;
+&lt;div class="mar-y-0-xs"&gt;mar-y-0-xs&lt;/div&gt;
+&lt;div class="mar-y-h-xs"&gt;mar-y-h-xs&lt;/div&gt;
+&lt;div class="mar-y-1-xs"&gt;mar-y-1-xs&lt;/div&gt;
+&lt;div class="mar-y-2-xs"&gt;mar-y-2-xs&lt;/div&gt;
+&lt;div class="mar-y-3-xs"&gt;mar-y-3-xs&lt;/div&gt;
+
+&lt;!-- margin-top and margin-bottom: sm only --&gt;
+&lt;div class="mar-y-0-sm"&gt;mar-y-0-sm&lt;/div&gt;
+&lt;div class="mar-y-h-sm"&gt;mar-y-h-sm&lt;/div&gt;
+&lt;div class="mar-y-1-sm"&gt;mar-y-1-sm&lt;/div&gt;
+&lt;div class="mar-y-2-sm"&gt;mar-y-2-sm&lt;/div&gt;
+&lt;div class="mar-y-3-sm"&gt;mar-y-3-sm&lt;/div&gt;
+
+&lt;!-- margin-top and margin-bottom: md only --&gt;
+&lt;div class="mar-y-0-md"&gt;mar-y-0-md&lt;/div&gt;
+&lt;div class="mar-y-h-md"&gt;mar-y-h-md&lt;/div&gt;
+&lt;div class="mar-y-1-md"&gt;mar-y-1-md&lt;/div&gt;
+&lt;div class="mar-y-2-md"&gt;mar-y-2-md&lt;/div&gt;
+&lt;div class="mar-y-3-md"&gt;mar-y-3-md&lt;/div&gt;
+
+&lt;!-- margin-top and margin-bottom: lg only --&gt;
+&lt;div class="mar-y-0-lg"&gt;mar-y-0-lg&lt;/div&gt;
+&lt;div class="mar-y-h-lg"&gt;mar-y-h-lg&lt;/div&gt;
+&lt;div class="mar-y-1-lg"&gt;mar-y-1-lg&lt;/div&gt;
+&lt;div class="mar-y-2-lg"&gt;mar-y-2-lg&lt;/div&gt;
+&lt;div class="mar-y-3-lg"&gt;mar-y-3-lg&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h2 id="padding">Padding-helpers</h2>
+      <h5 class="example-heading">Example</h5>
+      <div class="example">
+        <h3 class="mar-t-0">padding-top: all sizes</h3>
+<div class="pad-t-0 mar-b-h bg-gray10">pad-t-0</div>
+<div class="pad-t-h mar-b-h bg-gray10">pad-t-h</div>
+<div class="pad-t-1 mar-b-h bg-gray10">pad-t-1</div>
+<div class="pad-t-2 mar-b-h bg-gray10">pad-t-2</div>
+<div class="pad-t-3 mar-b-h bg-gray10">pad-t-3</div>
+
+<h3>padding-top: xs only</h3>
+<div class="pad-t-0-xs mar-b-h bg-gray10">pad-t-0-xs</div>
+<div class="pad-t-h-xs mar-b-h bg-gray10">pad-t-h-xs</div>
+<div class="pad-t-1-xs mar-b-h bg-gray10">pad-t-1-xs</div>
+<div class="pad-t-2-xs mar-b-h bg-gray10">pad-t-2-xs</div>
+<div class="pad-t-3-xs mar-b-h bg-gray10">pad-t-3-xs</div>
+
+<h3>padding-top: sm only</h3>
+<div class="pad-t-0-sm mar-b-h bg-gray10">pad-t-0-sm</div>
+<div class="pad-t-h-sm mar-b-h bg-gray10">pad-t-h-sm</div>
+<div class="pad-t-1-sm mar-b-h bg-gray10">pad-t-1-sm</div>
+<div class="pad-t-2-sm mar-b-h bg-gray10">pad-t-2-sm</div>
+<div class="pad-t-3-sm mar-b-h bg-gray10">pad-t-3-sm</div>
+
+<h3>padding-top: md only</h3>
+<div class="pad-t-0-md mar-b-h bg-gray10">pad-t-0-md</div>
+<div class="pad-t-h-md mar-b-h bg-gray10">pad-t-h-md</div>
+<div class="pad-t-1-md mar-b-h bg-gray10">pad-t-1-md</div>
+<div class="pad-t-2-md mar-b-h bg-gray10">pad-t-2-md</div>
+<div class="pad-t-3-md mar-b-h bg-gray10">pad-t-3-md</div>
+
+<h3>padding-top: lg only</h3>
+<div class="pad-t-0-lg mar-b-h bg-gray10">pad-t-0-lg</div>
+<div class="pad-t-h-lg mar-b-h bg-gray10">pad-t-h-lg</div>
+<div class="pad-t-1-lg mar-b-h bg-gray10">pad-t-1-lg</div>
+<div class="pad-t-2-lg mar-b-h bg-gray10">pad-t-2-lg</div>
+<div class="pad-t-3-lg mar-b-h bg-gray10">pad-t-3-lg</div>
+        <h3>padding-right: all sizes</h3>
+<div class="pad-r-0 mar-b-h bg-gray10 text-right">pad-r-0</div>
+<div class="pad-r-h mar-b-h bg-gray10 text-right">pad-r-h</div>
+<div class="pad-r-1 mar-b-h bg-gray10 text-right">pad-r-1</div>
+<div class="pad-r-2 mar-b-h bg-gray10 text-right">pad-r-2</div>
+<div class="pad-r-3 mar-b-h bg-gray10 text-right">pad-r-3</div>
+
+<h3>padding-right: xs only</h3>
+<div class="pad-r-0-xs mar-b-h bg-gray10 text-right">pad-r-0-xs</div>
+<div class="pad-r-h-xs mar-b-h bg-gray10 text-right">pad-r-h-xs</div>
+<div class="pad-r-1-xs mar-b-h bg-gray10 text-right">pad-r-1-xs</div>
+<div class="pad-r-2-xs mar-b-h bg-gray10 text-right">pad-r-2-xs</div>
+<div class="pad-r-3-xs mar-b-h bg-gray10 text-right">pad-r-3-xs</div>
+
+<h3>padding-right: sm only</h3>
+<div class="pad-r-0-sm mar-b-h bg-gray10 text-right">pad-r-0-sm</div>
+<div class="pad-r-h-sm mar-b-h bg-gray10 text-right">pad-r-h-sm</div>
+<div class="pad-r-1-sm mar-b-h bg-gray10 text-right">pad-r-1-sm</div>
+<div class="pad-r-2-sm mar-b-h bg-gray10 text-right">pad-r-2-sm</div>
+<div class="pad-r-3-sm mar-b-h bg-gray10 text-right">pad-r-3-sm</div>
+
+<h3>padding-right: md only</h3>
+<div class="pad-r-0-md mar-b-h bg-gray10 text-right">pad-r-0-md</div>
+<div class="pad-r-h-md mar-b-h bg-gray10 text-right">pad-r-h-md</div>
+<div class="pad-r-1-md mar-b-h bg-gray10 text-right">pad-r-1-md</div>
+<div class="pad-r-2-md mar-b-h bg-gray10 text-right">pad-r-2-md</div>
+<div class="pad-r-3-md mar-b-h bg-gray10 text-right">pad-r-3-md</div>
+
+<h3>padding-right: lg only</h3>
+<div class="pad-r-0-lg mar-b-h bg-gray10 text-right">pad-r-0-lg</div>
+<div class="pad-r-h-lg mar-b-h bg-gray10 text-right">pad-r-h-lg</div>
+<div class="pad-r-1-lg mar-b-h bg-gray10 text-right">pad-r-1-lg</div>
+<div class="pad-r-2-lg mar-b-h bg-gray10 text-right">pad-r-2-lg</div>
+<div class="pad-r-3-lg mar-b-h bg-gray10 text-right">pad-r-3-lg</div>
+        <h3>padding-bottom: all sizes</h3>
+<div class="pad-b-0 mar-b-h bg-gray10">pad-b-0</div>
+<div class="pad-b-h mar-b-h bg-gray10">pad-b-h</div>
+<div class="pad-b-1 mar-b-h bg-gray10">pad-b-1</div>
+<div class="pad-b-2 mar-b-h bg-gray10">pad-b-2</div>
+<div class="pad-b-3 mar-b-h bg-gray10">pad-b-3</div>
+
+<h3>padding-bottom: xs only</h3>
+<div class="pad-b-0-xs mar-b-h bg-gray10">pad-b-0-xs</div>
+<div class="pad-b-h-xs mar-b-h bg-gray10">pad-b-h-xs</div>
+<div class="pad-b-1-xs mar-b-h bg-gray10">pad-b-1-xs</div>
+<div class="pad-b-2-xs mar-b-h bg-gray10">pad-b-2-xs</div>
+<div class="pad-b-3-xs mar-b-h bg-gray10">pad-b-3-xs</div>
+
+<h3>padding-bottom: sm only</h3>
+<div class="pad-b-0-sm mar-b-h bg-gray10">pad-b-0-sm</div>
+<div class="pad-b-h-sm mar-b-h bg-gray10">pad-b-h-sm</div>
+<div class="pad-b-1-sm mar-b-h bg-gray10">pad-b-1-sm</div>
+<div class="pad-b-2-sm mar-b-h bg-gray10">pad-b-2-sm</div>
+<div class="pad-b-3-sm mar-b-h bg-gray10">pad-b-3-sm</div>
+
+<h3>padding-bottom: md only</h3>
+<div class="pad-b-0-md mar-b-h bg-gray10">pad-b-0-md</div>
+<div class="pad-b-h-md mar-b-h bg-gray10">pad-b-h-md</div>
+<div class="pad-b-1-md mar-b-h bg-gray10">pad-b-1-md</div>
+<div class="pad-b-2-md mar-b-h bg-gray10">pad-b-2-md</div>
+<div class="pad-b-3-md mar-b-h bg-gray10">pad-b-3-md</div>
+
+<h3>padding-bottom: lg only</h3>
+<div class="pad-b-0-lg mar-b-h bg-gray10">pad-b-0-lg</div>
+<div class="pad-b-h-lg mar-b-h bg-gray10">pad-b-h-lg</div>
+<div class="pad-b-1-lg mar-b-h bg-gray10">pad-b-1-lg</div>
+<div class="pad-b-2-lg mar-b-h bg-gray10">pad-b-2-lg</div>
+<div class="pad-b-3-lg mar-b-h bg-gray10">pad-b-3-lg</div>
+        <h3>padding-left: all sizes</h3>
+<div class="pad-l-0 mar-b-h bg-gray10">pad-l-0</div>
+<div class="pad-l-h mar-b-h bg-gray10">pad-l-h</div>
+<div class="pad-l-1 mar-b-h bg-gray10">pad-l-1</div>
+<div class="pad-l-2 mar-b-h bg-gray10">pad-l-2</div>
+<div class="pad-l-3 mar-b-h bg-gray10">pad-l-3</div>
+
+<h3>padding-left: xs only</h3>
+<div class="pad-l-0-xs mar-b-h bg-gray10">pad-l-0-xs</div>
+<div class="pad-l-h-xs mar-b-h bg-gray10">pad-l-h-xs</div>
+<div class="pad-l-1-xs mar-b-h bg-gray10">pad-l-1-xs</div>
+<div class="pad-l-2-xs mar-b-h bg-gray10">pad-l-2-xs</div>
+<div class="pad-l-3-xs mar-b-h bg-gray10">pad-l-3-xs</div>
+
+<h3>padding-left: sm only</h3>
+<div class="pad-l-0-sm mar-b-h bg-gray10">pad-l-0-sm</div>
+<div class="pad-l-h-sm mar-b-h bg-gray10">pad-l-h-sm</div>
+<div class="pad-l-1-sm mar-b-h bg-gray10">pad-l-1-sm</div>
+<div class="pad-l-2-sm mar-b-h bg-gray10">pad-l-2-sm</div>
+<div class="pad-l-3-sm mar-b-h bg-gray10">pad-l-3-sm</div>
+
+<h3>padding-left: md only</h3>
+<div class="pad-l-0-md mar-b-h bg-gray10">pad-l-0-md</div>
+<div class="pad-l-h-md mar-b-h bg-gray10">pad-l-h-md</div>
+<div class="pad-l-1-md mar-b-h bg-gray10">pad-l-1-md</div>
+<div class="pad-l-2-md mar-b-h bg-gray10">pad-l-2-md</div>
+<div class="pad-l-3-md mar-b-h bg-gray10">pad-l-3-md</div>
+
+<h3>padding-left: lg only</h3>
+<div class="pad-l-0-lg mar-b-h bg-gray10">pad-l-0-lg</div>
+<div class="pad-l-h-lg mar-b-h bg-gray10">pad-l-h-lg</div>
+<div class="pad-l-1-lg mar-b-h bg-gray10">pad-l-1-lg</div>
+<div class="pad-l-2-lg mar-b-h bg-gray10">pad-l-2-lg</div>
+<div class="pad-l-3-lg mar-b-h bg-gray10">pad-l-3-lg</div>
+        <h3>padding-x (padding-left and padding-right): all sizes</h3>
+<div class="pad-x-0 mar-b-h bg-gray10">pad-x-0</div>
+<div class="pad-x-h mar-b-h bg-gray10">pad-x-h</div>
+<div class="pad-x-1 mar-b-h bg-gray10">pad-x-1</div>
+<div class="pad-x-2 mar-b-h bg-gray10">pad-x-2</div>
+<div class="pad-x-3 mar-b-h bg-gray10">pad-x-3</div>
+
+<h3>padding-x (padding-left and padding-right): xs only</h3>
+<div class="pad-x-0-xs mar-b-h bg-gray10">pad-x-0-xs</div>
+<div class="pad-x-h-xs mar-b-h bg-gray10">pad-x-h-xs</div>
+<div class="pad-x-1-xs mar-b-h bg-gray10">pad-x-1-xs</div>
+<div class="pad-x-2-xs mar-b-h bg-gray10">pad-x-2-xs</div>
+<div class="pad-x-3-xs mar-b-h bg-gray10">pad-x-3-xs</div>
+
+<h3>padding-x (padding-left and padding-right): sm only</h3>
+<div class="pad-x-0-sm mar-b-h bg-gray10">pad-x-0-sm</div>
+<div class="pad-x-h-sm mar-b-h bg-gray10">pad-x-h-sm</div>
+<div class="pad-x-1-sm mar-b-h bg-gray10">pad-x-1-sm</div>
+<div class="pad-x-2-sm mar-b-h bg-gray10">pad-x-2-sm</div>
+<div class="pad-x-3-sm mar-b-h bg-gray10">pad-x-3-sm</div>
+
+<h3>padding-x (padding-left and padding-right): md only</h3>
+<div class="pad-x-0-md mar-b-h bg-gray10">pad-x-0-md</div>
+<div class="pad-x-h-md mar-b-h bg-gray10">pad-x-h-md</div>
+<div class="pad-x-1-md mar-b-h bg-gray10">pad-x-1-md</div>
+<div class="pad-x-2-md mar-b-h bg-gray10">pad-x-2-md</div>
+<div class="pad-x-3-md mar-b-h bg-gray10">pad-x-3-md</div>
+
+<h3>padding-x (padding-left and padding-right): lg only</h3>
+<div class="pad-x-0-lg mar-b-h bg-gray10">pad-x-0-lg</div>
+<div class="pad-x-h-lg mar-b-h bg-gray10">pad-x-h-lg</div>
+<div class="pad-x-1-lg mar-b-h bg-gray10">pad-x-1-lg</div>
+<div class="pad-x-2-lg mar-b-h bg-gray10">pad-x-2-lg</div>
+<div class="pad-x-3-lg mar-b-h bg-gray10">pad-x-3-lg</div>
+        <h3>padding-y (padding-top and padding-bottom): all sizes</h3>
+<div class="pad-y-0 mar-b-h bg-gray10">pad-y-0</div>
+<div class="pad-y-h mar-b-h bg-gray10">pad-y-h</div>
+<div class="pad-y-1 mar-b-h bg-gray10">pad-y-1</div>
+<div class="pad-y-2 mar-b-h bg-gray10">pad-y-2</div>
+<div class="pad-y-3 mar-b-h bg-gray10">pad-y-3</div>
+
+<h3>padding-y (padding-top and padding-bottom): xs only</h3>
+<div class="pad-y-0-xs mar-b-h bg-gray10">pad-y-0-xs</div>
+<div class="pad-y-h-xs mar-b-h bg-gray10">pad-y-h-xs</div>
+<div class="pad-y-1-xs mar-b-h bg-gray10">pad-y-1-xs</div>
+<div class="pad-y-2-xs mar-b-h bg-gray10">pad-y-2-xs</div>
+<div class="pad-y-3-xs mar-b-h bg-gray10">pad-y-3-xs</div>
+
+<h3>padding-y (padding-top and padding-bottom): sm only</h3>
+<div class="pad-y-0-sm mar-b-h bg-gray10">pad-y-0-sm</div>
+<div class="pad-y-h-sm mar-b-h bg-gray10">pad-y-h-sm</div>
+<div class="pad-y-1-sm mar-b-h bg-gray10">pad-y-1-sm</div>
+<div class="pad-y-2-sm mar-b-h bg-gray10">pad-y-2-sm</div>
+<div class="pad-y-3-sm mar-b-h bg-gray10">pad-y-3-sm</div>
+
+<h3>padding-y (padding-top and padding-bottom): md only</h3>
+<div class="pad-y-0-md mar-b-h bg-gray10">pad-y-0-md</div>
+<div class="pad-y-h-md mar-b-h bg-gray10">pad-y-h-md</div>
+<div class="pad-y-1-md mar-b-h bg-gray10">pad-y-1-md</div>
+<div class="pad-y-2-md mar-b-h bg-gray10">pad-y-2-md</div>
+<div class="pad-y-3-md mar-b-h bg-gray10">pad-y-3-md</div>
+
+<h3>padding-y (padding-top and padding-bottom): lg only</h3>
+<div class="pad-y-0-lg mar-b-h bg-gray10">pad-y-0-lg</div>
+<div class="pad-y-h-lg mar-b-h bg-gray10">pad-y-h-lg</div>
+<div class="pad-y-1-lg mar-b-h bg-gray10">pad-y-1-lg</div>
+<div class="pad-y-2-lg mar-b-h bg-gray10">pad-y-2-lg</div>
+<div class="pad-y-3-lg mar-b-h bg-gray10">pad-y-3-lg</div>
+      </div>
+      <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- padding-top: all sizes --&gt;
+&lt;div class="pad-t-0"&gt;pad-t-0&lt;/div&gt;
+&lt;div class="pad-t-h"&gt;pad-t-h&lt;/div&gt;
+&lt;div class="pad-t-1"&gt;pad-t-1&lt;/div&gt;
+&lt;div class="pad-t-2"&gt;pad-t-2&lt;/div&gt;
+&lt;div class="pad-t-3"&gt;pad-t-3&lt;/div&gt;
+
+&lt;!-- padding-top: xs only --&gt;
+&lt;div class="pad-t-0-xs"&gt;pad-t-0-xs&lt;/div&gt;
+&lt;div class="pad-t-h-xs"&gt;pad-t-h-xs&lt;/div&gt;
+&lt;div class="pad-t-1-xs"&gt;pad-t-1-xs&lt;/div&gt;
+&lt;div class="pad-t-2-xs"&gt;pad-t-2-xs&lt;/div&gt;
+&lt;div class="pad-t-3-xs"&gt;pad-t-3-xs&lt;/div&gt;
+
+&lt;!-- padding-top: sm only --&gt;
+&lt;div class="pad-t-0-sm"&gt;pad-t-0-sm&lt;/div&gt;
+&lt;div class="pad-t-h-sm"&gt;pad-t-h-sm&lt;/div&gt;
+&lt;div class="pad-t-1-sm"&gt;pad-t-1-sm&lt;/div&gt;
+&lt;div class="pad-t-2-sm"&gt;pad-t-2-sm&lt;/div&gt;
+&lt;div class="pad-t-3-sm"&gt;pad-t-3-sm&lt;/div&gt;
+
+&lt;!-- padding-top: md only --&gt;
+&lt;div class="pad-t-0-md"&gt;pad-t-0-md&lt;/div&gt;
+&lt;div class="pad-t-h-md"&gt;pad-t-h-md&lt;/div&gt;
+&lt;div class="pad-t-1-md"&gt;pad-t-1-md&lt;/div&gt;
+&lt;div class="pad-t-2-md"&gt;pad-t-2-md&lt;/div&gt;
+&lt;div class="pad-t-3-md"&gt;pad-t-3-md&lt;/div&gt;
+
+&lt;!-- padding-top: lg only --&gt;
+&lt;div class="pad-t-0-lg"&gt;pad-t-0-lg&lt;/div&gt;
+&lt;div class="pad-t-h-lg"&gt;pad-t-h-lg&lt;/div&gt;
+&lt;div class="pad-t-1-lg"&gt;pad-t-1-lg&lt;/div&gt;
+&lt;div class="pad-t-2-lg"&gt;pad-t-2-lg&lt;/div&gt;
+&lt;div class="pad-t-3-lg"&gt;pad-t-3-lg&lt;/div&gt;
+
+&lt;!-- padding-top: all sizes --&gt;
+&lt;div class="pad-r-0"&gt;pad-r-0&lt;/div&gt;
+&lt;div class="pad-r-h"&gt;pad-r-h&lt;/div&gt;
+&lt;div class="pad-r-1"&gt;pad-r-1&lt;/div&gt;
+&lt;div class="pad-r-2"&gt;pad-r-2&lt;/div&gt;
+&lt;div class="pad-r-3"&gt;pad-r-3&lt;/div&gt;
+
+&lt;!-- padding-top: xs only --&gt;
+&lt;div class="pad-r-0-xs"&gt;pad-r-0-xs&lt;/div&gt;
+&lt;div class="pad-r-h-xs"&gt;pad-r-h-xs&lt;/div&gt;
+&lt;div class="pad-r-1-xs"&gt;pad-r-1-xs&lt;/div&gt;
+&lt;div class="pad-r-2-xs"&gt;pad-r-2-xs&lt;/div&gt;
+&lt;div class="pad-r-3-xs"&gt;pad-r-3-xs&lt;/div&gt;
+
+&lt;!-- padding-top: sm only --&gt;
+&lt;div class="pad-r-0-sm"&gt;pad-r-0-sm&lt;/div&gt;
+&lt;div class="pad-r-h-sm"&gt;pad-r-h-sm&lt;/div&gt;
+&lt;div class="pad-r-1-sm"&gt;pad-r-1-sm&lt;/div&gt;
+&lt;div class="pad-r-2-sm"&gt;pad-r-2-sm&lt;/div&gt;
+&lt;div class="pad-r-3-sm"&gt;pad-r-3-sm&lt;/div&gt;
+
+&lt;!-- padding-top: md only --&gt;
+&lt;div class="pad-r-0-md"&gt;pad-r-0-md&lt;/div&gt;
+&lt;div class="pad-r-h-md"&gt;pad-r-h-md&lt;/div&gt;
+&lt;div class="pad-r-1-md"&gt;pad-r-1-md&lt;/div&gt;
+&lt;div class="pad-r-2-md"&gt;pad-r-2-md&lt;/div&gt;
+&lt;div class="pad-r-3-md"&gt;pad-r-3-md&lt;/div&gt;
+
+&lt;!-- padding-top: lg only --&gt;
+&lt;div class="pad-r-0-lg"&gt;pad-r-0-lg&lt;/div&gt;
+&lt;div class="pad-r-h-lg"&gt;pad-r-h-lg&lt;/div&gt;
+&lt;div class="pad-r-1-lg"&gt;pad-r-1-lg&lt;/div&gt;
+&lt;div class="pad-r-2-lg"&gt;pad-r-2-lg&lt;/div&gt;
+&lt;div class="pad-r-3-lg"&gt;pad-r-3-lg&lt;/div&gt;
+
+&lt;!-- padding-right: all sizes --&gt;
+&lt;div class="pad-r-0"&gt;pad-r-0&lt;/div&gt;
+&lt;div class="pad-r-h"&gt;pad-r-h&lt;/div&gt;
+&lt;div class="pad-r-1"&gt;pad-r-1&lt;/div&gt;
+&lt;div class="pad-r-2"&gt;pad-r-2&lt;/div&gt;
+&lt;div class="pad-r-3"&gt;pad-r-3&lt;/div&gt;
+
+&lt;!-- padding-right: xs only --&gt;
+&lt;div class="pad-r-0-xs"&gt;pad-r-0-xs&lt;/div&gt;
+&lt;div class="pad-r-h-xs"&gt;pad-r-h-xs&lt;/div&gt;
+&lt;div class="pad-r-1-xs"&gt;pad-r-1-xs&lt;/div&gt;
+&lt;div class="pad-r-2-xs"&gt;pad-r-2-xs&lt;/div&gt;
+&lt;div class="pad-r-3-xs"&gt;pad-r-3-xs&lt;/div&gt;
+
+&lt;!-- padding-right: sm only --&gt;
+&lt;div class="pad-r-0-sm"&gt;pad-r-0-sm&lt;/div&gt;
+&lt;div class="pad-r-h-sm"&gt;pad-r-h-sm&lt;/div&gt;
+&lt;div class="pad-r-1-sm"&gt;pad-r-1-sm&lt;/div&gt;
+&lt;div class="pad-r-2-sm"&gt;pad-r-2-sm&lt;/div&gt;
+&lt;div class="pad-r-3-sm"&gt;pad-r-3-sm&lt;/div&gt;
+
+&lt;!-- padding-right: md only --&gt;
+&lt;div class="pad-r-0-md"&gt;pad-r-0-md&lt;/div&gt;
+&lt;div class="pad-r-h-md"&gt;pad-r-h-md&lt;/div&gt;
+&lt;div class="pad-r-1-md"&gt;pad-r-1-md&lt;/div&gt;
+&lt;div class="pad-r-2-md"&gt;pad-r-2-md&lt;/div&gt;
+&lt;div class="pad-r-3-md"&gt;pad-r-3-md&lt;/div&gt;
+
+&lt;!-- padding-right: lg only --&gt;
+&lt;div class="pad-r-0-lg"&gt;pad-r-0-lg&lt;/div&gt;
+&lt;div class="pad-r-h-lg"&gt;pad-r-h-lg&lt;/div&gt;
+&lt;div class="pad-r-1-lg"&gt;pad-r-1-lg&lt;/div&gt;
+&lt;div class="pad-r-2-lg"&gt;pad-r-2-lg&lt;/div&gt;
+&lt;div class="pad-r-3-lg"&gt;pad-r-3-lg&lt;/div&gt;
+
+&lt;!-- padding-bottom: all sizes --&gt;
+&lt;div class="pad-b-0"&gt;pad-b-0&lt;/div&gt;
+&lt;div class="pad-b-h"&gt;pad-b-h&lt;/div&gt;
+&lt;div class="pad-b-1"&gt;pad-b-1&lt;/div&gt;
+&lt;div class="pad-b-2"&gt;pad-b-2&lt;/div&gt;
+&lt;div class="pad-b-3"&gt;pad-b-3&lt;/div&gt;
+
+&lt;!-- padding-bottom: xs only --&gt;
+&lt;div class="pad-b-0-xs"&gt;pad-b-0-xs&lt;/div&gt;
+&lt;div class="pad-b-h-xs"&gt;pad-b-h-xs&lt;/div&gt;
+&lt;div class="pad-b-1-xs"&gt;pad-b-1-xs&lt;/div&gt;
+&lt;div class="pad-b-2-xs"&gt;pad-b-2-xs&lt;/div&gt;
+&lt;div class="pad-b-3-xs"&gt;pad-b-3-xs&lt;/div&gt;
+
+&lt;!-- padding-bottom: sm only --&gt;
+&lt;div class="pad-b-0-sm"&gt;pad-b-0-sm&lt;/div&gt;
+&lt;div class="pad-b-h-sm"&gt;pad-b-h-sm&lt;/div&gt;
+&lt;div class="pad-b-1-sm"&gt;pad-b-1-sm&lt;/div&gt;
+&lt;div class="pad-b-2-sm"&gt;pad-b-2-sm&lt;/div&gt;
+&lt;div class="pad-b-3-sm"&gt;pad-b-3-sm&lt;/div&gt;
+
+&lt;!-- padding-bottom: md only --&gt;
+&lt;div class="pad-b-0-md"&gt;pad-b-0-md&lt;/div&gt;
+&lt;div class="pad-b-h-md"&gt;pad-b-h-md&lt;/div&gt;
+&lt;div class="pad-b-1-md"&gt;pad-b-1-md&lt;/div&gt;
+&lt;div class="pad-b-2-md"&gt;pad-b-2-md&lt;/div&gt;
+&lt;div class="pad-b-3-md"&gt;pad-b-3-md&lt;/div&gt;
+
+&lt;!-- padding-bottom: lg only --&gt;
+&lt;div class="pad-b-0-lg"&gt;pad-b-0-lg&lt;/div&gt;
+&lt;div class="pad-b-h-lg"&gt;pad-b-h-lg&lt;/div&gt;
+&lt;div class="pad-b-1-lg"&gt;pad-b-1-lg&lt;/div&gt;
+&lt;div class="pad-b-2-lg"&gt;pad-b-2-lg&lt;/div&gt;
+&lt;div class="pad-b-3-lg"&gt;pad-b-3-lg&lt;/div&gt;
+
+&lt;!-- padding-left: all sizes --&gt;
+&lt;div class="pad-l-0"&gt;pad-l-0&lt;/div&gt;
+&lt;div class="pad-l-h"&gt;pad-l-h&lt;/div&gt;
+&lt;div class="pad-l-1"&gt;pad-l-1&lt;/div&gt;
+&lt;div class="pad-l-2"&gt;pad-l-2&lt;/div&gt;
+&lt;div class="pad-l-3"&gt;pad-l-3&lt;/div&gt;
+
+&lt;!-- padding-left: xs only --&gt;
+&lt;div class="pad-l-0-xs"&gt;pad-l-0-xs&lt;/div&gt;
+&lt;div class="pad-l-h-xs"&gt;pad-l-h-xs&lt;/div&gt;
+&lt;div class="pad-l-1-xs"&gt;pad-l-1-xs&lt;/div&gt;
+&lt;div class="pad-l-2-xs"&gt;pad-l-2-xs&lt;/div&gt;
+&lt;div class="pad-l-3-xs"&gt;pad-l-3-xs&lt;/div&gt;
+
+&lt;!-- padding-left: sm only --&gt;
+&lt;div class="pad-l-0-sm"&gt;pad-l-0-sm&lt;/div&gt;
+&lt;div class="pad-l-h-sm"&gt;pad-l-h-sm&lt;/div&gt;
+&lt;div class="pad-l-1-sm"&gt;pad-l-1-sm&lt;/div&gt;
+&lt;div class="pad-l-2-sm"&gt;pad-l-2-sm&lt;/div&gt;
+&lt;div class="pad-l-3-sm"&gt;pad-l-3-sm&lt;/div&gt;
+
+&lt;!-- padding-left: md only --&gt;
+&lt;div class="pad-l-0-md"&gt;pad-l-0-md&lt;/div&gt;
+&lt;div class="pad-l-h-md"&gt;pad-l-h-md&lt;/div&gt;
+&lt;div class="pad-l-1-md"&gt;pad-l-1-md&lt;/div&gt;
+&lt;div class="pad-l-2-md"&gt;pad-l-2-md&lt;/div&gt;
+&lt;div class="pad-l-3-md"&gt;pad-l-3-md&lt;/div&gt;
+
+&lt;!-- padding-left: lg only --&gt;
+&lt;div class="pad-l-0-lg"&gt;pad-l-0-lg&lt;/div&gt;
+&lt;div class="pad-l-h-lg"&gt;pad-l-h-lg&lt;/div&gt;
+&lt;div class="pad-l-1-lg"&gt;pad-l-1-lg&lt;/div&gt;
+&lt;div class="pad-l-2-lg"&gt;pad-l-2-lg&lt;/div&gt;
+&lt;div class="pad-l-3-lg"&gt;pad-l-3-lg&lt;/div&gt;
+
+&lt;!-- padding-left and padding-right: all sizes --&gt;
+&lt;div class="pad-x-0"&gt;pad-x-0&lt;/div&gt;
+&lt;div class="pad-x-h"&gt;pad-x-h&lt;/div&gt;
+&lt;div class="pad-x-1"&gt;pad-x-1&lt;/div&gt;
+&lt;div class="pad-x-2"&gt;pad-x-2&lt;/div&gt;
+&lt;div class="pad-x-3"&gt;pad-x-3&lt;/div&gt;
+
+&lt;!-- padding-left and padding-right: xs only --&gt;
+&lt;div class="pad-x-0-xs"&gt;pad-x-0-xs&lt;/div&gt;
+&lt;div class="pad-x-h-xs"&gt;pad-x-h-xs&lt;/div&gt;
+&lt;div class="pad-x-1-xs"&gt;pad-x-1-xs&lt;/div&gt;
+&lt;div class="pad-x-2-xs"&gt;pad-x-2-xs&lt;/div&gt;
+&lt;div class="pad-x-3-xs"&gt;pad-x-3-xs&lt;/div&gt;
+
+&lt;!-- padding-left and padding-right: sm only --&gt;
+&lt;div class="pad-x-0-sm"&gt;pad-x-0-sm&lt;/div&gt;
+&lt;div class="pad-x-h-sm"&gt;pad-x-h-sm&lt;/div&gt;
+&lt;div class="pad-x-1-sm"&gt;pad-x-1-sm&lt;/div&gt;
+&lt;div class="pad-x-2-sm"&gt;pad-x-2-sm&lt;/div&gt;
+&lt;div class="pad-x-3-sm"&gt;pad-x-3-sm&lt;/div&gt;
+
+&lt;!-- padding-left and padding-right: md only --&gt;
+&lt;div class="pad-x-0-md"&gt;pad-x-0-md&lt;/div&gt;
+&lt;div class="pad-x-h-md"&gt;pad-x-h-md&lt;/div&gt;
+&lt;div class="pad-x-1-md"&gt;pad-x-1-md&lt;/div&gt;
+&lt;div class="pad-x-2-md"&gt;pad-x-2-md&lt;/div&gt;
+&lt;div class="pad-x-3-md"&gt;pad-x-3-md&lt;/div&gt;
+
+&lt;!-- padding-left and padding-right: lg only --&gt;
+&lt;div class="pad-x-0-lg"&gt;pad-x-0-lg&lt;/div&gt;
+&lt;div class="pad-x-h-lg"&gt;pad-x-h-lg&lt;/div&gt;
+&lt;div class="pad-x-1-lg"&gt;pad-x-1-lg&lt;/div&gt;
+&lt;div class="pad-x-2-lg"&gt;pad-x-2-lg&lt;/div&gt;
+&lt;div class="pad-x-3-lg"&gt;pad-x-3-lg&lt;/div&gt;
+
+&lt;!-- padding-top and padding-bottom: all sizes --&gt;
+&lt;div class="pad-y-0"&gt;pad-y-0&lt;/div&gt;
+&lt;div class="pad-y-h"&gt;pad-y-h&lt;/div&gt;
+&lt;div class="pad-y-1"&gt;pad-y-1&lt;/div&gt;
+&lt;div class="pad-y-2"&gt;pad-y-2&lt;/div&gt;
+&lt;div class="pad-y-3"&gt;pad-y-3&lt;/div&gt;
+
+&lt;!-- padding-top and padding-bottom: xs only --&gt;
+&lt;div class="pad-y-0-xs"&gt;pad-y-0-xs&lt;/div&gt;
+&lt;div class="pad-y-h-xs"&gt;pad-y-h-xs&lt;/div&gt;
+&lt;div class="pad-y-1-xs"&gt;pad-y-1-xs&lt;/div&gt;
+&lt;div class="pad-y-2-xs"&gt;pad-y-2-xs&lt;/div&gt;
+&lt;div class="pad-y-3-xs"&gt;pad-y-3-xs&lt;/div&gt;
+
+&lt;!-- padding-top and padding-bottom: sm only --&gt;
+&lt;div class="pad-y-0-sm"&gt;pad-y-0-sm&lt;/div&gt;
+&lt;div class="pad-y-h-sm"&gt;pad-y-h-sm&lt;/div&gt;
+&lt;div class="pad-y-1-sm"&gt;pad-y-1-sm&lt;/div&gt;
+&lt;div class="pad-y-2-sm"&gt;pad-y-2-sm&lt;/div&gt;
+&lt;div class="pad-y-3-sm"&gt;pad-y-3-sm&lt;/div&gt;
+
+&lt;!-- padding-top and padding-bottom: md only --&gt;
+&lt;div class="pad-y-0-md"&gt;pad-y-0-md&lt;/div&gt;
+&lt;div class="pad-y-h-md"&gt;pad-y-h-md&lt;/div&gt;
+&lt;div class="pad-y-1-md"&gt;pad-y-1-md&lt;/div&gt;
+&lt;div class="pad-y-2-md"&gt;pad-y-2-md&lt;/div&gt;
+&lt;div class="pad-y-3-md"&gt;pad-y-3-md&lt;/div&gt;
+
+&lt;!-- padding-top and padding-bottom: lg only --&gt;
+&lt;div class="pad-y-0-lg"&gt;pad-y-0-lg&lt;/div&gt;
+&lt;div class="pad-y-h-lg"&gt;pad-y-h-lg&lt;/div&gt;
+&lt;div class="pad-y-1-lg"&gt;pad-y-1-lg&lt;/div&gt;
+&lt;div class="pad-y-2-lg"&gt;pad-y-2-lg&lt;/div&gt;
+&lt;div class="pad-y-3-lg"&gt;pad-y-3-lg&lt;/div&gt;
+</code></pre>
+      <hr>
+
+    </div>
+  </div>
+
+  <script src="assets/js/prism.js"></script>
+</body>
+</html>

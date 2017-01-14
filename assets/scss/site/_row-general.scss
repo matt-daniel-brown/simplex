@@ -1,0 +1,30 @@
+.row-general {
+  padding: $row-padding-xs;
+}
+
+
+// sm and up
+
+@media (min-width: $screen-sm-min) {
+  .row-general {
+    padding: $row-padding-sm;
+  }
+}
+
+
+// md and up
+
+@media (min-width: $screen-md-min) {
+  .row-general {
+    padding: $row-padding-md;
+  }
+}
+
+
+// lg and up
+
+@media (min-width: $screen-lg-min) {
+  .row-general {
+    padding: $row-padding-lg;
+  }
+}

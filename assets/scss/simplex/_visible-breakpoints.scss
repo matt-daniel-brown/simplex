@@ -1,0 +1,52 @@
+body:before {
+  position: fixed;
+  z-index: 2;
+  top: 5px;
+  right: 5px;
+  border: 2px solid $white;
+  border-radius: 10px;
+  padding: .2em .5em;
+  color: $white;
+  box-shadow: 0 3px 3px rgba(0,0,0,.4);
+  font-size: 1.2em;
+}
+
+
+// xs small only
+
+@media (max-width: $screen-xs-max) {
+  body:before {
+    content: 'XS';
+    background: $red;
+  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  body:before {
+    content: 'SM';
+    background: $black;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  body:before {
+    content: 'MD';
+    background: $secondary-color;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  body:before {
+    content: 'LG';
+    background: $primary-color;
+  }
+}

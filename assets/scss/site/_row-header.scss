@@ -1,0 +1,23 @@
+.row-header {
+  padding: .8em 0 1.5em;
+  color: $base-text-color;
+  background: $tertiary-color;
+
+  a:link,
+  a:visited {
+    color: $base-text-color;
+  }
+
+}
+
+@media (max-width: $screen-xs-max) {
+  .row-header {
+    padding: .5em 0 1em;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .row-header {
+    padding: .4em 0 1.2em;
+  }
+}

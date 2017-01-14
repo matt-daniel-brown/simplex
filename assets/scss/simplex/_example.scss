@@ -1,0 +1,23 @@
+// example
+
+.example {
+  border: 1px solid $gray15;
+  margin: .5em 0;
+  padding: 1em;
+}
+
+.example-heading {
+  color: $base-text-color;
+  font-size: $font14;
+  text-transform: uppercase;
+}
+
+
+// color
+
+.color-sample {
+  border: 2px solid $gray15;
+  margin: 0 0 1em;
+  padding: 1.5em 1em;
+  text-align: center;
+}

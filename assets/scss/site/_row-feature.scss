@@ -1,0 +1,33 @@
+.row-feature {
+  padding: $row-padding-xs;
+}
+
+.row-feature {
+  background: $gray5;
+}
+
+// sm and up
+
+@media (min-width: $screen-sm-min) {
+  .row-feature {
+    padding: $row-padding-sm;
+  }
+}
+
+
+// md and up
+
+@media (min-width: $screen-md-min) {
+  .row-feature {
+    padding: $row-padding-md;
+  }
+}
+
+
+// lg and up
+
+@media (min-width: $screen-lg-min) {
+  .row-feature {
+    padding: $row-padding-lg;
+  }
+}
